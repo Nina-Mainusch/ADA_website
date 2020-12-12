@@ -1,19 +1,12 @@
-<!---
-Abstract:
-**With more than 14'000 restaurants, food is a serious business in Chicago. But choosing where to eat is not an easy task, especially when you want to avoid risky places. Our choices are usually affected by the reviews of other visitors and the location of the restaurant. But do we ever wonder if a restaurant fulfils all sanitary standards?**
-
-Using [Chicago Food Inspection data](https://www.kaggle.com/chicago/chicago-food-inspections), our goal is to provide insights into food quality in the Windy City. We want to explore what are the violations that restaurants make most often, how they change over time and are they connected to the area where restaurant is located.
---->
-
 **Why do Friendships matter?**
 
-Our society tends to place an emphasis on romantic relationships and we think that just finding that right person will make us happy and fulfilled. But research shows that friends are actually even more important to our psychological welfare. Friendships have a huge impact on your mental health and happiness. Good friends relieve stress, provide comfort and joy, and prevent loneliness and isolation. Developing close friendships can also have a powerful impact on your physical health. Friends are even tied to longevity, since a Swedish study found that along with physical activity, maintaining a rich network of friends can add significant years to your life. A lack of social connection however may pose as much of a risk as smoking, drinking too much, or leading a sedentary lifestyle. But you can't make friendships out of thin air. Many of us struggle to meet people and develop quality connections. Whatever your age or circumstances, though, it’s never too late to make new friends, and greatly improve your social life, emotional health, and overall well-being. 
+Our society tends to place an emphasis on romantic relationships and we think that just finding that right person will make us happy and fulfilled. But research shows that friends are actually even more important to our psychological welfare. Friendships have a huge impact on your mental health and happiness. Good friends relieve stress, provide comfort and joy, and prevent loneliness and isolation. Developing close friendships can also have a powerful impact on your physical health. Friends are even tied to longevity, since a Swedish study found that along with physical activity, maintaining a rich network of friends can add significant years to your life. A lack of social connection however may pose as much of a risk as smoking, drinking too much, or leading a sedentary lifestyle. But you can't make friendships out of thin air. Many of us struggle to meet people and develop quality connections. Whatever your age or circumstances, it’s never too late to make new friends and greatly improve your social life, emotional health, and overall well-being. 
 
 **What would your approach to making new friends be?** 
 
 There are countless psychological guides on how to make friends. And undoubtedly this is an essential aspect when approaching new people. But what if it's not just your social skills that determine whether you make friends? What if you could multiply your chances of making friends and vastly increase your friendship network by moving to a certain place? At a certain time of the year?
 
-Our research is concerned with these 
+Our research is concerned with exactly these external factors that influence our social network. We have looked at two **location-based social network** data sets. The users of those networks have checked in to various locations all over the world between April 2008 and October 2010. For each check-in, we now the geographical location, the exact time, the user and all the friends of the user. Based on these check-ins, we could compute the home location of each user and whether or not a check-in was a visit to a friend or not.
 
 --------------------------------------
 
