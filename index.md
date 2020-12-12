@@ -9,7 +9,7 @@ Using [Chicago Food Inspection data](https://www.kaggle.com/chicago/chicago-food
 
 Our society tends to place an emphasis on romantic relationships and we think that just finding that right person will make us happy and fulfilled. But research shows that friends are actually even more important to our psychological welfare. Friendships have a huge impact on your mental health and happiness. Good friends relieve stress, provide comfort and joy, and prevent loneliness and isolation. Developing close friendships can also have a powerful impact on your physical health. Friends are even tied to longevity, since a Swedish study found that along with physical activity, maintaining a rich network of friends can add significant years to your life. A lack of social connection however may pose as much of a risk as smoking, drinking too much, or leading a sedentary lifestyle. But you can't make friendships out of thin air. Many of us struggle to meet people and develop quality connections. Whatever your age or circumstances, though, it’s never too late to make new friends, and greatly improve your social life, emotional health, and overall well-being. 
 
-**What would your approach to make new friends be?** 
+**What would your approach to making new friends be?** 
 
 There are countless psychological guides on how to make friends. And undoubtedly this is an essential aspect when approaching new people. But what if it's not just your social skills that determine whether you make friends? What if you could multiply your chances of making friends and vastly increase your friendship network by moving to a certain place? At a certain time of the year?
 
