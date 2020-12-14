@@ -10,7 +10,7 @@ Our research is concerned with exactly these external factors that influence our
 
 Let's start inspecting where on the world the users checked-in.
 
-{% include results_of_inspections_per_year.html %}
+{% include world_checkins.html %}
 
 We can see that the data sets comprise checkins from all over the world, but a majority is from either the US or Europe. This is why in our later analysis, we will make a distinction between US and non-US checkins, to not bias our results.
 
