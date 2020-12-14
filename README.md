@@ -6,7 +6,7 @@ from plotly.offline import plot
 
 fig = your_plotly_figure_object
 html = plot(fig, auto_open=False, output_type='div')
-with open("~/ada/jczestochowska.github.io/_includes/YOUR_PLOT_NAME.html", 'w') as file:
+with open("~/nina-mainusch.github.io/_includes/YOUR_PLOT_NAME.html", 'w') as file:
     file.write(html)
 ```
 
