@@ -18,7 +18,7 @@ We can see that the users are from all over the world, but a majority lives in e
 <h2>The spacial dimension</h2>
 
 There are plenty of spacial factors that can determine how many friends you have. Do you live in a rural or urban area? How well are the people in general connected at your place of residence?
-We will start with investigating whether inhabitants of urban cities are more likely to have friends than inhabitants of rural areas. In order to do so, we have to define what a city is. The [UN Statistical Commission](https://blogs.worldbank.org/sustainablecities/how-do-we-define-cities-towns-and-rural-areas) endorsed the Degree of Urbanization stating that cities are settlements which have a population of at least 50,000 inhabitants in contiguous dense grid cells (\\(>1,500\\) inhabitants per \\(km^2\\)).
+We will start with investigating whether inhabitants of urban cities are more likely to have friends than inhabitants of rural areas. In order to do so, we have to define what a city is. The [UN Statistical Commission](https://blogs.worldbank.org/sustainablecities/how-do-we-define-cities-towns-and-rural-areas) endorsed the Degree of Urbanization stating that cities are settlements which have a population of at least 50,000 inhabitants in contiguous dense grid cells ($>1,500$ inhabitants per $km^2$).
 
 **US citizens**:
 
@@ -35,7 +35,9 @@ TODO Carl:
 Transition to Subnetworks, RQ 3
 Write a paragraph for the motivation why we did subnetworks, how related to topic, plots
 "Can we detect certain loosely connected sub-networks which corresponds to a circle of friends or a city? If yes, what is the probability that a user is part of such a circle of friends?"
+
 **US citizens**:
+
 **Non-US citizens**:
 
 
@@ -45,6 +47,9 @@ Write a paragraph for the motivation why we did subnetworks, how related to topi
 TODO: Devrim: what about RQ4?
 4. How does the interconnection between countries/continents differ? Does it depend on the language or religion?
 
+**US citizens**
+
+**Non-US citizens**
 
 
 --------------------------------------
@@ -56,6 +61,7 @@ Transition to temporal dimension
 2. How often do users visit each other? Does it depend on whether they live in a city or not or on the season of the year?
 
 **US citizens**
+
 **Non-US citizens**
 
 
