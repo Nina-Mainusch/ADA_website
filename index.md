@@ -14,16 +14,37 @@ Let's start inspecting the home locations of our users.
 
 We can see that the users are from all over the world, but a majority lives in either the US or Europe. This is why in our later analysis, we will make a distinction between US and non-US users in order to not bias our results.
 
+
+<h2>The spacial dimension</h2>
+
+There are plenty of spacial factors that can determine how many friends you have. Do you live in a rural or urban area? Are there many people of your age? How well are the people in general connected at your place of residence?
+We will start with investigating whether inhabitants of urban cities are more likely to have friends than inhabitants of rural areas. In order to do so, we have to define what a city is. 
+
+**US citizens**
+
+
+
+
+
+
+<h4>Non-US citizens</h4>
+
+
+
+
+
+
+
+
+1. Are inhabitants of cities more likely to have more friends than individuals living in rural areas?
+2. How often do users visit each other? Does it depend on whether they live in a city or not or on the season of the year?
+3. Can we detect certain loosely connected sub-networks which corresponds to a circle of friends or a city? If yes, what is the probability that a user is part of such a circle of friends?
+4. How does the interconnection between countries/continents differ? Does it depend on the language or religion?
+
+
 --------------------------------------
 
 
-
-Let's start with a quick look on the inspection results of the past ten years.
-
-
-It seems that majority of the restaurants managed to pass their inspections before 2018 but afterwards we can see increase in inspections that passed with conditions. What may have caused that? It is clearly not enough to look just at pass and fail we would like to discover what are the reasons behind inspection failure.
-
-<h2>Violations</h2>
 
 So, if we really want to figure out how good a restaurant is, based on the inspection results, common sense tells us that if a restaurant commits many violations, we might reconsider our decision to visit it. That is why we wanted to check how many violations restaurants make on average per inspection. But looking at several thousand of restaurants at a time isn't really possible, so we first group all of the restaurants based on their location. The city of Chicago is officially divided into 77 community areas, which are grouped into 9 districts. We used this geographical and administrative partition of the city as a starting point and checked how many violations per inspection restaurants make on average in each community area. 
 
