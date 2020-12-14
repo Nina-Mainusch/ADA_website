@@ -8,7 +8,7 @@ There are countless psychological guides on how to make friends. And undoubtedly
 
 Our research is concerned with exactly these external factors that influence our social network. We have looked at two **location-based social network** data sets. The users of those networks have checked in to various locations all over the world between April 2008 and October 2010. For each check-in, we know the geographical location, the exact time, the user and all the friends of the user. Based on these check-ins, we could compute the home location of each user and whether or not a check-in was a visit to a friend or not. We will use this data as an unconventional approach to investigate friendship across time and space, providing insights about the external factors that determine someone's social cirlce, like the place of residence and the time of the year.
 
-Let's start inspecting the home locations of our users.
+Let's start inspecting the home locations of our users. To calculate it, we discretised the world in 25x25 km cells, took all the checkins of each user and calculated the home location as the average of all checkins in the most frequently visited cell. This gives a 85% accuracy of the user's home location:
 
 {% include world_checkins.html %}
 
@@ -18,7 +18,7 @@ We can see that the users are from all over the world, but a majority lives in e
 <h2>The spacial dimension</h2>
 
 There are plenty of spacial factors that can determine how many friends you have. Do you live in a rural or urban area? Are there many people of your age? How well are the people in general connected at your place of residence?
-We will start with investigating whether inhabitants of urban cities are more likely to have friends than inhabitants of rural areas. In order to do so, we have to define what a city is. 
+We will start with investigating whether inhabitants of urban cities are more likely to have friends than inhabitants of rural areas. In order to do so, we have to define what a city is. The [UN Statistical Commission](https://blogs.worldbank.org/sustainablecities/how-do-we-define-cities-towns-and-rural-areas) endorsed the Degree of Urbanization stating that cities are settlements which have a population of at least 50,000 inhabitants in contiguous dense grid cells ($>1,500$ inhabitants per $km^2$).
 
 **US citizens**
 
@@ -27,7 +27,7 @@ We will start with investigating whether inhabitants of urban cities are more li
 
 
 
-<h4>Non-US citizens</h4>
+**Non-US citizens**
 
 
 
