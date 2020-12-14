@@ -20,29 +20,66 @@ We can see that the users are from all over the world, but a majority lives in e
 There are plenty of spacial factors that can determine how many friends you have. Do you live in a rural or urban area? How well are the people in general connected at your place of residence?
 We will start with investigating whether inhabitants of urban cities are more likely to have friends than inhabitants of rural areas. In order to do so, we have to define what a city is. The [UN Statistical Commission](https://blogs.worldbank.org/sustainablecities/how-do-we-define-cities-towns-and-rural-areas) endorsed the Degree of Urbanization stating that cities are settlements which have a population of at least 50,000 inhabitants in contiguous dense grid cells (\\(>1,500\\) inhabitants per \\(km^2\\)).
 
-**US citizens**
+**US citizens**:
+
+**Non-US citizens**:
 
 
+TODO interpret:
+Interpreting these results we see that XXX
+
+--------------------------------------
 
 
-
-
-**Non-US citizens**
-
-
-
-
-
-
-
-
-1. Are inhabitants of cities more likely to have more friends than individuals living in rural areas?
-2. How often do users visit each other? Does it depend on whether they live in a city or not or on the season of the year?
-3. Can we detect certain loosely connected sub-networks which corresponds to a circle of friends or a city? If yes, what is the probability that a user is part of such a circle of friends?
-4. How does the interconnection between countries/continents differ? Does it depend on the language or religion?
+TODO Carl:
+Transition to Subnetworks, RQ 3
+Write a paragraph for the motivation why we did subnetworks, how related to topic, plots
+"Can we detect certain loosely connected sub-networks which corresponds to a circle of friends or a city? If yes, what is the probability that a user is part of such a circle of friends?"
+**US citizens**:
+**Non-US citizens**:
 
 
 --------------------------------------
+
+
+TODO: Devrim: what about RQ4?
+4. How does the interconnection between countries/continents differ? Does it depend on the language or religion?
+
+
+
+--------------------------------------
+
+
+<h2>The temporal dimension</h2>
+Transition to temporal dimension
+
+2. How often do users visit each other? Does it depend on whether they live in a city or not or on the season of the year?
+
+**US citizens**
+**Non-US citizens**
+
+
+--------------------------------------
+
+<h2>What about you?</h2>
+  
+We completed our friendship journey through time and space! 
+
+TODO
+  
+  
+  
+  
+We have dived deep into Chicago's sanitary inspections! Having seen all these maps, you probably now know Windy City like the back of your hand. Generally, we have seen that Chicago restaurants mostly fullfil sanitary safety requirements, but there are still things you should watch out for. Firstly it would be good to think twice before grabbing lunch in South or Far South Chicago. Those areas seem to have largest amount of food poisoning cases. 
+   
+Although South has also the greatest number of violations, it might still be worth a try. **As we all know, everything that is risky definitely tastes better.** We've seen that generally restaurants in Chicago pass the sanitary inspections, most of them also managed to fix commited violations and improve their standards. This definitely gives us some hope for a high-end culinary experience in one of the most populous cities in the USA. If you are a fast-food fan and plan to enjoy a real american meal, we would suggest to keep away from KFC for some time in the next year, their violation trend is increasingly distressing...   
+  
+Finally if you have always dreamt of basing your own food business we definitely recommend to focus on keeping your floor clean and your refrigerator cold. 
+
+
+
+
+
 
 
 
