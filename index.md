@@ -21,7 +21,7 @@ There are plenty of spacial factors that can determine how many friends you have
 
 **Are inhabitants of urban cities more likely to have friends than inhabitants of rural areas?**
 
-We will start with investigating whether inhabitants of urban cities are more likely to have friends than inhabitants of rural areas. In order to do so, we have to define what a city is. The [UN Statistical Commission](https://blogs.worldbank.org/sustainablecities/how-do-we-define-cities-towns-and-rural-areas) endorsed the Degree of Urbanization stating that cities are settlements which have a population of at least 50,000 inhabitants in contiguous dense grid cells ($>1,500$ inhabitants per $km^2$). Applying this criteria, we are left with 1256 non-US cities and 328 US cities.
+We will start with investigating whether inhabitants of urban cities are more likely to have friends than inhabitants of rural areas. In order to do so, we have to define what a city is. The [UN Statistical Commission](https://blogs.worldbank.org/sustainablecities/how-do-we-define-cities-towns-and-rural-areas) endorsed the Degree of Urbanization stating that cities are settlements which have a population of at least 50,000 inhabitants in contiguous dense grid cells (>1,500 inhabitants per km^2). Applying this criteria, we are left with 1256 non-US cities and 328 US cities.
 The next step is to compute whether a citizen lives in a city, which we will do by checking the distance to all cities of the home country of the user. Intuitively, the user lives in a city if the distance to at least on of them is smaller than the expansion of the respective city. Afterwards, we can compute the amount of friends per urban and rural user. For the **Non-US citizens** we get the following results
 
 
@@ -62,10 +62,10 @@ TODO: Devrim: what about RQ4?
 
 
 <h2>The temporal dimension</h2>
-Transition to temporal dimension
 
-2. How often do users visit each other? Does it depend on whether they live in a city or not or on the season of the year?
-
+Next to the spatial dimension, there is the whole temporal aspect of friendship. When do people visit each other? And how often? Does it depend on whether they live in a city or not or on the season of the year?
+We will start do dive into it by inspecting how often users visit each other. Remember, the period where the data was collected is between April 2008 and October 2010, so we will inspect how often users visited each other in this period.
+ 
 **US citizens**
 
 **Non-US citizens**
