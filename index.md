@@ -12,7 +12,7 @@ Let's start inspecting the home locations of our users. To calculate it, we disc
 
 {% include world_checkins.html %}
 
-We can see that the users are from all over the world, but a majority lives in either the US or Europe. This is why in our later analysis, we will make a distinction between US and non-US users in order to not bias our results.
+We can see that the users are from all over the world, but a majority lives in either the US or Europe. To be precise, 81281 users live in the US and 76497 somewhere else. This is why in our later analysis, we will make a distinction between US and non-US users in order to not bias our results.
 
 
 <h2>The spacial dimension</h2>
@@ -21,7 +21,7 @@ There are plenty of spacial factors that can determine how many friends you have
 
 **Are inhabitants of urban cities more likely to have friends than inhabitants of rural areas?**
 
-We will start with investigating whether inhabitants of urban cities are more likely to have friends than inhabitants of rural areas. In order to do so, we have to define what a city is. The [UN Statistical Commission](https://blogs.worldbank.org/sustainablecities/how-do-we-define-cities-towns-and-rural-areas) endorsed the Degree of Urbanization stating that cities are settlements which have a population of at least 50,000 inhabitants in contiguous dense grid cells ($>1,500$ inhabitants per $km^2$). Applying this criteria, we are left with 1256 non-US cities and XXX US cities.
+We will start with investigating whether inhabitants of urban cities are more likely to have friends than inhabitants of rural areas. In order to do so, we have to define what a city is. The [UN Statistical Commission](https://blogs.worldbank.org/sustainablecities/how-do-we-define-cities-towns-and-rural-areas) endorsed the Degree of Urbanization stating that cities are settlements which have a population of at least 50,000 inhabitants in contiguous dense grid cells ($>1,500$ inhabitants per $km^2$). Applying this criteria, we are left with 1256 non-US cities and 328 US cities.
 The next step is to compute whether a citizen lives in a city, which we will do by checking the distance to all cities of the home country of the user. Intuitively, the user lives in a city if the distance to at least on of them is smaller than the expansion of the respective city. Afterwards, we can compute the amount of friends per urban and rural user. For the **Non-US citizens** we get the following results
 
 
@@ -31,7 +31,7 @@ First, we can observe that in general more people live in rural areas than in ci
 
 Let's check whether the results for **US citizens** are similar.
 
-{% include urban_rural_friends_non_US.html %}
+{% include urban_rural_friends_US.html %}
 
 
 --------------------------------------
