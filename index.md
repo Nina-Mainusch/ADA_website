@@ -97,6 +97,14 @@ include Friend_visit_US_urban.html
 
 
 
+TODO Conclusion
+
+Well we know now that people in cities maintain more insense friendships than people in the rural areas. But when do they visit each other? To find this out we will divide each checkin that was a visit to a friend in four categories, one for each season: spring, summer, autumn and winter. Since the seasons change for each site of the globe, we will focus on the checkins of **US citizens**.
+
+TODO insert plot
+
+
+
 --------------------------------------
 
 <h2>What about you?</h2>
