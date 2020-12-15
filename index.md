@@ -48,9 +48,11 @@ Transition to Subnetworks, RQ 3
 Write a paragraph for the motivation why we did subnetworks, how related to topic, plots
 "Can we detect certain loosely connected sub-networks which corresponds to a circle of friends or a city? If yes, what is the probability that a user is part of such a circle of friends?"
 
+**Non-US citizens**:
+
 **US citizens**:
 
-**Non-US citizens**:
+
 
 
 --------------------------------------
@@ -59,9 +61,11 @@ Write a paragraph for the motivation why we did subnetworks, how related to topi
 TODO: Devrim: what about RQ4?
 4. How does the interconnection between countries/continents differ? Does it depend on the language or religion?
 
+**Non-US citizens**
+
 **US citizens**
 
-**Non-US citizens**
+
 
 
 --------------------------------------
@@ -71,22 +75,26 @@ TODO: Devrim: what about RQ4?
 
 Next to the spatial dimension, there is the whole temporal aspect of friendship. When do people visit each other? And how often? Does it depend on whether they live in a city or not or on the season of the year?
 We will start do dive into it by inspecting how often users visit each other. Remember, the period where the data was collected is between April 2008 and October 2010, so we will inspect how often users visited each other in this period.
- 
-**US citizens**
 
-{% include Friend_visit_US_distribution.html  %}
-
-
-
-**Non-US citizens**
-
-
-
-
+As before we start with the behaviour of the **Non-US citizens**:
 
 {% include Friend_visit_non_US_distribution.html %}
 
+Interestingly enough we can notice that the distribution is approximately bimodal: either people visited their friends very rarely in those 2 1/2 years, between 0 and 250 times, or they visited each other quite a lot, more than a 1000 times. This suggests that people have in general either loose or quite intense friendships. But does it depend on whether they live rural or urban?
+
 {% include Friend_visit_non_US_urban.html %}
+
+Here we see quite clearly that there is a difference between people that live urban and those that live rural: users in cities visit each other more than users in rural areas! Moreover, we can say that most of the intense friendships are between people that live in cities, where people in rural areas have more sporadic friendships. Thus if you prefer to have insense friendships, you should definitely consider moving to a city outside of the US. But wait, maybe it is the same pattern for the US? Let's look at all our users that live in the US.
+
+
+{% include Friend_visit_US_distribution.html  %}
+
+There seems to be a similar pattern present for the **US citizens**: many of them have loose friendships, and some are really intense. Again, we investigate which of these users live rural and which live urban.
+
+
+include Friend_visit_US_urban.html
+
+
 
 
 --------------------------------------
