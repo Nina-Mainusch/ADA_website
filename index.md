@@ -29,9 +29,16 @@ The next step is to compute whether a citizen lives in a city, which we will do 
 
 First, we can observe that in general more people live in rural areas than in cities.
 
+the corresponding distribution is:
+
+{% include urban_rural_friends_non_US_distribution.html %}
+
+
 Let's check whether the results for **US citizens** are similar.
 
 {% include urban_rural_friends_US.html %}
+
+{% include urban_rural_friends_US_distribution.html %}
 
 
 --------------------------------------
