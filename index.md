@@ -39,6 +39,7 @@ To get a first grasp how the situtation looks like for **US citizens**, we look 
 {% include urban_rural_friends_US_distribution.html %}
 
 
+
 --------------------------------------
 
 
@@ -73,6 +74,8 @@ We will start do dive into it by inspecting how often users visit each other. Re
  
 **US citizens**
 
+{% include Friend_visit_US_distribution.html  %}
+
 
 
 **Non-US citizens**
@@ -81,9 +84,9 @@ We will start do dive into it by inspecting how often users visit each other. Re
 
 
 
-{% include Friend_visit_non_US_distribution.html.html %}
+{% include Friend_visit_non_US_distribution.html %}
 
-{% include Friend_visit_non_US_urban.html.html %}
+{% include Friend_visit_non_US_urban.html %}
 
 
 --------------------------------------
