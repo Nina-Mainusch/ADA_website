@@ -18,15 +18,21 @@ We can see that the users are from all over the world, but a majority lives in e
 <h2>The spacial dimension</h2>
 
 There are plenty of spacial factors that can determine how many friends you have. Do you live in a rural or urban area? How well are the people in general connected at your place of residence?
-We will start with investigating whether inhabitants of urban cities are more likely to have friends than inhabitants of rural areas. In order to do so, we have to define what a city is. The [UN Statistical Commission](https://blogs.worldbank.org/sustainablecities/how-do-we-define-cities-towns-and-rural-areas) endorsed the Degree of Urbanization stating that cities are settlements which have a population of at least 50,000 inhabitants in contiguous dense grid cells ($>1,500$ inhabitants per $km^2$).
 
-**US citizens**:
+**Are inhabitants of urban cities more likely to have friends than inhabitants of rural areas?**
 
-**Non-US citizens**:
+We will start with investigating whether inhabitants of urban cities are more likely to have friends than inhabitants of rural areas. In order to do so, we have to define what a city is. The [UN Statistical Commission](https://blogs.worldbank.org/sustainablecities/how-do-we-define-cities-towns-and-rural-areas) endorsed the Degree of Urbanization stating that cities are settlements which have a population of at least 50,000 inhabitants in contiguous dense grid cells ($>1,500$ inhabitants per $km^2$). Applying this criteria, we are left with 1256 non-US cities and XXX US cities.
+The next step is to compute whether a citizen lives in a city, which we will do by checking the distance to all cities of the home country of the user. Intuitively, the user lives in a city if the distance to at least on of them is smaller than the expansion of the respective city. Afterwards, we can compute the amount of friends per urban and rural user. For the **Non-US citizens** we get the following results
 
 
-TODO interpret:
-Interpreting these results we see that XXX
+{% include urban_rural_friends_non_US.html %}
+
+First, we can observe that in general more people live in rural areas than in cities.
+
+Let's check whether the results for **US citizens** are similar.
+
+{% include urban_rural_friends_non_US.html %}
+
 
 --------------------------------------
 
@@ -76,16 +82,6 @@ TODO
   
   
   
-We have dived deep into Chicago's sanitary inspections! Having seen all these maps, you probably now know Windy City like the back of your hand. Generally, we have seen that Chicago restaurants mostly fullfil sanitary safety requirements, but there are still things you should watch out for. Firstly it would be good to think twice before grabbing lunch in South or Far South Chicago. Those areas seem to have largest amount of food poisoning cases. 
-   
-Although South has also the greatest number of violations, it might still be worth a try. **As we all know, everything that is risky definitely tastes better.** We've seen that generally restaurants in Chicago pass the sanitary inspections, most of them also managed to fix commited violations and improve their standards. This definitely gives us some hope for a high-end culinary experience in one of the most populous cities in the USA. If you are a fast-food fan and plan to enjoy a real american meal, we would suggest to keep away from KFC for some time in the next year, their violation trend is increasingly distressing...   
-  
-Finally if you have always dreamt of basing your own food business we definitely recommend to focus on keeping your floor clean and your refrigerator cold. 
-
-
-
-
-
 
 
 
