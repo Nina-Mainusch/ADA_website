@@ -94,7 +94,8 @@ Here we see quite clearly that there is a difference between people that live ur
 There seems to be a similar pattern present for the **US citizens**: many of them have loose friendships, and some are really intense. Again, we investigate which of these users live rural and which live urban.
 
 
-include Friend_visit_US_urban.html
+{% include Friend_visit_US_urban.html  %}
+
 
 
 
