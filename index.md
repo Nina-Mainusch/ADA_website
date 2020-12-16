@@ -1,4 +1,4 @@
-**Why do Friendships matter?**
+**Why do friendships matter?**
 
 Our society tends to place an emphasis on romantic relationships and we think that just finding that right person will make us happy and fulfilled. But research shows that friends are actually even more important to our psychological welfare. Friendships have a huge impact on your mental health and happiness. Good friends relieve stress, provide comfort and joy, and prevent loneliness and isolation. Developing close friendships can also have a powerful impact on your physical health. Friends are even tied to longevity, since a Swedish study found that along with physical activity, maintaining a rich network of friends can add significant years to your life. A lack of social connection however may pose as much of a risk as smoking, drinking too much, or leading a sedentary lifestyle. But you can't make friendships out of thin air. Many of us struggle to meet people and develop quality connections. Whatever your age or circumstances, it’s never too late to make new friends and greatly improve your social life, emotional health, and overall well-being. 
 
@@ -32,13 +32,15 @@ First, we can observe that in general more people live in rural areas than in ci
 
 We see the same as in the table, the distributions of friends are more or less the same, but for users living urban there are more extreme numbers of friends. This indicates that living in a city outside the US does not necessarily increase your chances of having more friends! What about the US then? Should we move to the US if we want to increase the amount of friends we have?
 
-To get a first grasp how the situtation looks like for **US citizens**, we look at the table of results:Let's check whether the results for  are similar.
+To get a first grasp how the situtation looks like for **US citizens**, we look at the table of results.
 
 {% include urban_rural_friends_US.html %}
 
+Again, more people live in rural areas than in cities and the characteristics differ only in the maximum number of friends, which are higher for urban users. Plotting the distribution, we can see clearly that they are more or less the same, but for users living urban there are more extreme numbers of friends.
+
 {% include urban_rural_friends_US_distribution.html %}
 
-
+Living in the US or not, urban users have the same amount of friends than rural users. So when deciding where to live to increase your chances of having more friends, it does not matter whether you move in a rural or urban area. 
 
 --------------------------------------
 
