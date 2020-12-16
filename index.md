@@ -22,6 +22,9 @@ There are plenty of spacial factors that can determine how many friends you have
 **Are inhabitants of urban cities more likely to have friends than inhabitants of rural areas?**
 
 We will start with investigating whether inhabitants of urban cities are more likely to have friends than inhabitants of rural areas. In order to do so, we have to define what a city is. The [UN Statistical Commission](https://blogs.worldbank.org/sustainablecities/how-do-we-define-cities-towns-and-rural-areas) endorsed the Degree of Urbanization stating that cities are settlements which have a population of at least 50,000 inhabitants in contiguous dense grid cells (>1,500 inhabitants per km^2). Applying this criteria, we are left with 1256 non-US cities and 328 US cities.
+
+{% include world_cities.html %}
+
 The next step is to compute whether a citizen lives in a city, which we will do by checking the distance to all cities of the home country of the user. Intuitively, the user lives in a city if the distance to at least on of them is smaller than the expansion of the respective city. Afterwards, we can compute the amount of friends per urban and rural user. For the **Non-US citizens** we get the following table of results:
 
 {% include urban_rural_friends_non_US.html %}
