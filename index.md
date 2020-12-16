@@ -40,7 +40,7 @@ Again, more people live in rural areas than in cities and the characteristics di
 
 {% include urban_rural_friends_US_distribution.html %}
 
-Living in the US or not, urban users have the same amount of friends than rural users. So when deciding where to live to increase your chances of having more friends, it does not matter whether you move in a rural or urban area. 
+Living in the US or not, urban users have the same amount of friends than rural users. So when deciding where to live to increase your chances of having more friends, it does not matter whether you move to a rural or urban area. 
 
 --------------------------------------
 
@@ -82,27 +82,26 @@ As before we start with the behaviour of the **Non-US citizens**:
 
 {% include Friend_visit_non_US_distribution.html %}
 
-Interestingly enough we can notice that the distribution is approximately bimodal: either people visited their friends very rarely in those 2 1/2 years, between 0 and 250 times, or they visited each other quite a lot, more than a 1000 times. This suggests that people have in general either loose or quite intense friendships. But does it depend on whether they live rural or urban?
+Interestingly enough we can notice that the distribution is approximately trimodal: most people visited their friends very rarely in those 2 1/2 years, between 0 and 500 times, some visited each other around 1000 times, and others even 1500 - 2000 times. This suggests that people have in general either loose or quite intense friendships. But does it depend on whether they live rural or urban?
 
 {% include Friend_visit_non_US_urban.html %}
 
-Here we see quite clearly that there is a difference between people that live urban and those that live rural: users in cities visit each other more than users in rural areas! Moreover, we can say that most of the intense friendships are between people that live in cities, where people in rural areas have more sporadic friendships. Thus if you prefer to have insense friendships, you should definitely consider moving to a city outside of the US. But wait, maybe it is the same pattern for the US? Let's look at all our users that live in the US.
+Here we see quite clearly that there is a difference between people that live urban and those that live rural: users in cities visit each other more than users in rural areas! Moreover, we can say that most of the intense friendships are between people that live in cities, where people in rural areas have more sporadic friendships. Thus if you prefer to have intense friendships, you should definitely consider moving to a city outside of the US. But wait, maybe it is the same pattern for the US? Let's look at all our **US citizens**.
 
 
 {% include Friend_visit_US_distribution.html  %}
 
-There seems to be a similar pattern present for the **US citizens**: many of them have loose friendships, and some are really intense. Again, we investigate which of these users live rural and which live urban.
+There seems to be a similar pattern present for the users that live in the US: most of them have loose friendships, some are more intense and few are really profound. Again, we investigate which of these users live rural and which live urban.
 
 
 {% include Friend_visit_US_urban.html  %}
 
+Interestingly enough, tables seem to have turned: for US citizens, the more intense friendships are between users that live in rural areas, where urban users have more sporadic friendships.
+
+Summing up we conclude that if you are a social butterfly and want to have as many loose friendships as possible, you should move to a rural area outside of the US or to a big city inside the US. However if you are interested in deep friendships, you should rather go to a city outside of the US or to the rural areas of the US.
 
 
-
-
-TODO Conclusion
-
-Well we know now that people in cities maintain more insense friendships than people in the rural areas. But when do they visit each other? To find this out we will divide each checkin that was a visit to a friend in four categories, one for each season: spring, summer, autumn and winter. Since the seasons change for each site of the globe, we will focus on the checkins of **US citizens**.
+The question that is left unanswered is when do users visit each other? To find this out we will divide each checkin that was a visit to a friend in four categories, one for each season: spring, summer, autumn and winter. Since the seasons change for each site of the globe, we will focus on the checkins of **US citizens**.
 
 TODO insert plot
 
