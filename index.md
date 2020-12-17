@@ -47,18 +47,28 @@ Living in the US or not, urban users have the same amount of friends than rural 
 
 --------------------------------------
 
+**Investigating the structure of the social networks**
 
-TODO Carl:
-Transition to Subnetworks, RQ 3
-Write a paragraph for the motivation why we did subnetworks, how related to topic, plots
-"Can we detect certain loosely connected sub-networks which corresponds to a circle of friends or a city? If yes, what is the probability that a user is part of such a circle of friends?"
+We have discovered that the number of friends does not differ much between urban and rural inhabitants. An interesting follow up would be to look at how the friendship network is structured, can we detect communities that correspond to the geographical location of the users?
 
-**Non-US citizens**:
+To investigate this question we used a community detection algorithm on the friendship graph. There are a number of different community detection algorithms, however, due to the size of the data sets we had to restrict ourselves to algorithms that run in near linear time. We settled for the walktrap algorithm (http://arxiv.org/abs/physics/0512106). The algorithm tries to find densely connected subgraphs by performing random walks. The idea is that short random walks tend to stay in the same community.
 
-**US citizens**:
+We also decided to only use US check-ins. This is because we were mostly interested in seeing how cities are distributed in these clusters and introducing country borders would make things much more complicated. 
 
+What we discovered is that, for both data sets, the largest cluster had a pretty even distribution of cities. There was no city clearly dominating. Whats interesting about this is that it many users are quite tightly connected, despite great distances separating them. The largest cluster for the brightkite data set can be seen below.
 
+{% include B1_us.html %}
 
+However, for the smaller clusters there was almost always one city clearly dominating. 
+Another observation we made is that some of the largest cities, such as New York and Los Angeles, were quite strongly represented in all clusters, but never dominated. In most clusters where more than 40 % of users were from one city, the city was a bit smaller. In the examples below we show the third and fifth largest clusters for brightkite.
+
+{% include B3_us.html %}
+
+The third largest cluster in the brightkite data set, which is dominated by users living in Denver and Boulder, CO.
+
+{% include B5_us.html %}
+
+The fifth largest cluster in the brightkite data set, which is dominated by users living in Phoenix, AZ.
 
 --------------------------------------
 
