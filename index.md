@@ -104,7 +104,7 @@ Interestingly enough, tables seem to have turned: for US citizens, the more inte
 Summing up we conclude that if you are a social butterfly and want to have as many loose friendships as possible, you should move to a rural area outside of the US or to a big city inside the US. However if you are interested in deep friendships, you should rather go to a city outside of the US or to the rural areas of the US.
 
 
-The question that is left unanswered is when do users visit each other? To find this out we will divide each checkin that was a visit to a friend in four categories, one for each season: spring, summer, autumn and winter. Since the seasons change for each site of the globe, we will focus on the checkins of **US citizens**.
+The question that is left unanswered is when do users visit each other? To find this out we will divide each checkin that was a visit to a friend in four categories, one for each season: spring, summer, autumn and winter. Since the seasons change for each site of the globe, we will focus on the checkins of **US citizens**. Thus the months december, january, februrary are winter, march to may are spring, june to august summer and september to november autumn.
 
 TODO insert plot
 
