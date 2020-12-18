@@ -75,10 +75,19 @@ Up until now, we talked about how one's home location influences the making of f
 Two of these features, we were interested in, were language that one speaks and the religion that one practices. Since there is no way of knowing, which religion each of the users believed to and whether users were polygloths or just spoke one single language, we will simplify the matter but assuming that each user in one particular country speaks only **one** language and practices only **one** religion: the ones, that the majority of said country do.
 Since these meta information about countries were not readily available, we crawled the Internet in order to obtain the main religions and spoken languages for each country.
 
-In order to get a good grasp,about what kind of religions/languages we considered and how they are distributed over the world, the two images below illustrate a world view in respect to each of those two properties.
+In order to get a good grasp what kind of religions/languages we considered and how they are distributed over the world, the two images below illustrate a world view in respect to each of those two properties.
 
 {% include world_religions.html %}
 {% include world_languages.html %}
+
+As stated before, what we did next is assign one religion and language to each user, based on the most common language and religion in the user's respective home country. Since this method of assigning properties to users results in the fact that two users in the same country will also have the same language/religion, we will only considered international friendships. Using this approach, we are then able to build a network, where each node represents a language/religion and each edge between two nodes represents the number of friendships between two languages/religions.
+
+Here, we can see the corresponding network for religions.
+{% include friendships_religions.html %}
+
+
+Next, let us consider the network in respect to spoken languages.
+{% include friendships_languages.html %}
 
 
 --------------------------------------
