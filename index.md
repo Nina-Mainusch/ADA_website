@@ -116,7 +116,13 @@ Summing up we conclude that if you are a social butterfly and want to have as ma
 
 The question that is left unanswered is when do users visit each other? To find this out we will divide each checkin that was a visit to a friend in four categories, one for each season: spring, summer, autumn and winter. Since the seasons change for each site of the globe, we will focus on the checkins of **US citizens**. Thus the months december, january, februrary are winter, march to may are spring, june to august summer and september to november autumn.
 
-TODO insert plot
+{% include Friend_visit_non_US_season.html  %}
+
+
+
+{% include Friend_visit_US_season.html  %}
+
+
 
 
 
