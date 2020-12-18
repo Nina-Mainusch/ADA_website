@@ -44,9 +44,7 @@ Living in the US or not, urban users have the same amount of friends than rural 
 
 We have discovered that the number of friends does not differ much between urban and rural inhabitants. An interesting follow up would be to look at how the friendship network is structured, is the network graph limited to a number of smaller subgraphs, corresponding to the geographical location of users? Or are the users of the network more strongly connected across space?
 
-To investigate this question we used a community detection algorithm on the friendship graph. There are a number of different community detection algorithms, however, due to the size of the datasets we had to restrict ourselves to algorithms that are pretty fast. We settled for the [Walktrap algorithm](http://arxiv.org/abs/physics/0512106). The algorithm tries to find densely connected subgraphs by performing random walks. The idea is that short random walks tend to stay in the same community.
-
-We also decided to only use US check-ins. This is because we were mostly interested in seeing how cities are distributed in these clusters and introducing country borders would make things much more complicated.
+To investigate this question we used a community detection algorithm on the friendship graph. There are a number of different community detection algorithms, however, due to the size of the datasets we had to restrict ourselves to algorithms that are pretty fast. We settled for the [Walktrap algorithm](http://arxiv.org/abs/physics/0512106). The algorithm tries to find densely connected subgraphs by performing random walks. The idea is that short random walks tend to stay in the same community. We also decided to only use US check-ins. This is because we were mostly interested in seeing how cities are distributed in these clusters and introducing country borders would make things much more complicated.
 
 What we discovered is that, for both datasets, the largest cluster, with roughly 25% of users, had a pretty even distribution of cities. There was no city clearly dominating. What's interesting about this is that many users are quite tightly connected, despite great distances separating them. Thus, it seems that the social networks really do serve to eliminate great spatial distances limiting our ability to connect with other people. This means that for people looking to make friends in different places, joining a social network is probably a great idea since you end up connected to people living in the entire country, usually by only a few degrees of separation. The largest cluster for the Brightkite dataset can be seen below.
 
@@ -54,51 +52,46 @@ What we discovered is that, for both datasets, the largest cluster, with roughly
 
 {% include B1_us.html %}
 
-However, for the smaller clusters (100-2000 users) there was almost always one city or state clearly dominating. So the structure of the friendship graph is clearly dependent on the geographical location of the users, which was also concluded in the original [paper](https://dl.acm.org/doi/pdf/10.1145/2020408.2020579?casa_token=3q1JcL4gnjgAAAAA:_bOg0ajxYsMrA2Rt5fM7eUIwmO87nvfY_lkUb1G4hoE0Y-spNdZDdbNXVpFM8Xex9-fGOfZFklyDhw) in Figure 2A. This raises a number of questions which would have been interesting to investigate, given more time. For instance, it might be interesting to investigate the difference between users that end up in geographically restricted clusters, compared to those that end up in the larger, more spread out, clusters. Another interesting thing to investigate would be if inhabitants of certain cities are more likely to end up in isolated clusters. What we observed was that for the two largest cities in the US, New York and Los Angeles (although in gowalla Austin had more users), there did not seem to be any clusters isolated in the cities. Instead, both cities were strongly represented in almost all the larger clusters, while never completely dominating. Maybe this is an indication that users living in these two cities are more connected with the rest of the country. Unfortunately, analysing the clusters was extremely computationally intensive, due to the size of the networks and having to find cities for all users, so we did not have the resources to conduct a rigorous investigation of these questions. But it might be interesting to look at more closely, given more time and resources.
+However, for the smaller clusters (100-2000 users) there was almost always one city or state clearly dominating. So the structure of the friendship graph is clearly dependent on the geographical location of the users, which was also concluded in the original [paper](https://dl.acm.org/doi/pdf/10.1145/2020408.2020579?casa_token=3q1JcL4gnjgAAAAA:_bOg0ajxYsMrA2Rt5fM7eUIwmO87nvfY_lkUb1G4hoE0Y-spNdZDdbNXVpFM8Xex9-fGOfZFklyDhw) in Figure 2A. This raises a number of questions which would have been interesting to investigate, given more time. For instance, it might be interesting to investigate the difference between users that end up in geographically restricted clusters, compared to those that end up in the larger, more spread out, clusters. Another interesting thing to investigate would be if inhabitants of certain cities are more likely to end up in isolated clusters. What we observed was that for the two largest cities in the US, New York and Los Angeles (although in the Gowalla dataset Austin had more users), there did not seem to be any clusters isolated in the cities. Instead, both cities were strongly represented in almost all the larger clusters, while never completely dominating. Maybe this is an indication that users living in these two cities are more connected with the rest of the country. Unfortunately, analysing the clusters was extremely computationally intensive, due to the size of the networks and having to find cities for all users, so we did not have the resources to conduct a rigorous investigation of these questions. But it might be interesting to look at more closely, given more time and resources.
 
-Below, the third largest cluster in the Brightkite dataset, which is dominated by users living in Denver and Boulder, CO.
+Have a look below at the third largest cluster in the Brightkite dataset, which is dominated by users living in Denver and Boulder, CO.
 
 {% include B3_dist.html %}
 {% include B3_us.html %}
 
-Below, the third largest cluster in the Gowalla dataset, which is dominated by users living in Austin, TX.
+And lastly, the third largest cluster in the Gowalla dataset, which is dominated by users living in Austin, TX.
 
 {% include G3_dist.html %}
 {% include G3_us.html %}
 
---------------------------------------
-
 
 **How does one's practiced religion and spoken language influence the process of making friends?**
 
-Up until now, we talked about how one's home location influences the making of friends, and a bit further down we will talk about how the season of the year comes into play, but what about other properties; more personal properties.
-Two of these features, we were interested in, were language that one speaks and the religion that one practices. Since there is no way of knowing which religion each of the users believed to and whether users were polyglots or just spoke one single language, we will simplify the matter but assuming that each user in one particular country speaks only **one** language and practices only **one** religion: the ones, that the majority of said country do.
-Since these meta information about countries were not readily available, we crawled the Internet in order to obtain the main religions and spoken languages for each country.
+Up until now, we talked about how one's home location influences the making of friends, and a bit further down we will talk about how the season of the year comes into play, but what about other external factors that influence friendships, like sociological factors?
+Two of these sociological factors, that we are interested in, are language and the religion. Since there is no way of knowing which religion each of the users believes in or whether they are polyglots or just speak one single language. We will simplify the matter by assuming that each user in a particular country speaks only **one** language and practices only **one** religion: the ones, that the majority of said country speaks and practices.
+Since these meta information about countries were not in the original dataset linked in the introduction, we crawled the internet in order to obtain the main religions and spoken languages for each country.
 
-In order to get a good grasp what kind of religions/languages we considered and how they are distributed over the world, the two images below illustrate a world view in respect to each of those two properties.
+To get a good grasp what kind of religions/languages we consider and how they are distributed over the world, the two plots below illustrate a world view in respect to each of these two properties.
 
 {% include world_religions.html %}
 {% include world_languages.html %}
 
-
-As stated before, what we did next is assign one religion and language to each user, based on the most common language and religion in the user's respective home country. Since this method of assigning properties to users results in the fact that two users in the same country will also have the same language/religion, we will only considered international friendships. Using this approach, we are then able to build a network, where each node represents a language/religion and each edge between two nodes represents the number of friendships between two languages/religions.
-One important fact to mention here, is the interpretation of the size of respective nodes and edges:
+As stated before, what we did next is assigning one religion and language to each user, based on the most common language and religion in the user's respective home country. Since this method of assigning properties to users results in the fact that two users in the same country will also have the same language/religion, we will only considered international friendships. Using this approach, we are then able to build a network, where each node represents a language/religion and each edge between two nodes represents the number of friendships between two languages/religions.
+One important fact to mention here is the interpretation of the size of respective nodes and edges:
 * The size of a node corresponds to the number of speakers of a language / practitioners of a religion.
-* When deciding on the thickness of the edges, we did not simply want to scale it according to the absolute number of friendships, since this value fluctuates strongly with the number of users per country. Instead, it corresponds to the proportion of realized friendships in respect to the maximum potential number of friendships. To give an example: Given that there are four users that speak language **A** and two users that speak language **B**, the maximum potential number of friendships is then four times two, i.e., eight; if we then only noted five friendships in the dataset, this would mean that the proportion of realized friendships is five divided by eight, i.e., 0,625.
+* When deciding on the thickness of the edges, we did not simply want to scale it according to the absolute number of friendships, since this value fluctuates strongly with the number of users per country. Instead, it corresponds to the proportion of realized friendships in respect to the maximum potential number of friendships. To give an example: Given that there are four users that speak language **A** and two users that speak language **B**, the maximum potential number of friendships is then four times two, i.e., eight; if we only noted five friendships in the dataset, this would mean that the proportion of realized friendships is five divided by eight, i.e., 0,625.
 
 Here, we can see the corresponding network for religions.
 
 {% include friendships_religions.html %}
 
-Contrary to what people might think, it is great to see that there are not clear subsets in this network that correspond to more general religious beliefs. What we mean by this, is that the religions like the [Catholicism](https://simple.wikipedia.org/wiki/Catholicism), [Protestantism](https://simple.wikipedia.org/wiki/Protestantism) and [Christian Orthodoxy](https://en.wikipedia.org/wiki/Orthodoxy), all of which belong to Christianity, do not form a closed subnetwork. Instead, we can even observe a strong connection between [Anglicanism](https://simple.wikipedia.org/wiki/Anglicanism) and [Islam](https://simple.wikipedia.org/wiki/Islam), both of which belonging to religious beliefs which are often thought to have more [complicated history](https://en.wikipedia.org/wiki/Christianity_and_Islam). Even though we would have loved to see clearer differentiation and subnetworks from a scientific perspective, this means that when we talk about making friends, our results give reason to believe that religion does not seem to matter!
+Contrary to what people might think, it is great to see that there are not clear subsets in this network that correspond to more general religious beliefs. What we mean by this is that the religions like [Catholicism](https://simple.wikipedia.org/wiki/Catholicism), [Protestantism](https://simple.wikipedia.org/wiki/Protestantism) and [Christian Orthodoxy](https://en.wikipedia.org/wiki/Orthodoxy), all of which belong to Christianity, do not form a closed subnetwork. Instead, we can even observe a strong connection between [Anglicanism](https://simple.wikipedia.org/wiki/Anglicanism) and [Islam](https://simple.wikipedia.org/wiki/Islam), both of which belonging to religious beliefs which are often thought to have more [complicated history](https://en.wikipedia.org/wiki/Christianity_and_Islam). Even though we would have loved to see clearer differentiation and subnetworks from a scientific perspective, this means that when we talk about making friends, our results give reason to believe that religion does not seem to matter!
 
 Next, let us consider the network in respect to spoken languages.
 
 {% include friendships_languages.html %}
 
-The way in which the positions of the nodes were chosen, i.e., nodes with more connections are more central, gives us exactly what we expected: languages like *English*, *Spanish*, *French*, *Germany*, *Arabic*, Mandarin, etc. are participating in many friendships with many different languages. Furthemore, it seems that for the exception that is describes in the next sentence, language generally did not seem to make much of a difference. However, the particular strong interconnection between the languages *Lithuanian*, *Serbian* and *Bosnian* paint a different picture since they are composing subnetwork. This makes a lot of sense, once we consider that the first one belongs to the [Baltic languages](https://en.wikipedia.org/wiki/Baltic_languages) and the latter two to the [Slavic languages](https://en.wikipedia.org/wiki/Slavic_languages). In conclusion, it seems that being able to speak a specific language is necessary for building friendships, but especially if one is interested in making friends with a certain nationality, the data does indicate that the ability of speaking a certain language does make things easier.
-
---------------------------------------
+The way in which the positions of the nodes were chosen, i.e., nodes with more connections are more central, gives us exactly what we expected: languages like *English*, *Spanish*, *French*, *Germany*, *Arabic*, *Mandarin*, etc. are participating in many friendships with many different languages. Furthemore, it seems that for the exception that is describes in the next sentence, language generally did not seem to make much of a difference. However, the particular strong interconnection between the languages *Lithuanian*, *Serbian* and *Bosnian* paint a different picture since they are composing subnetwork. This makes a lot of sense, once we consider that the first one belongs to the [Baltic languages](https://en.wikipedia.org/wiki/Baltic_languages) and the latter two to the [Slavic languages](https://en.wikipedia.org/wiki/Slavic_languages). In conclusion, it seems that being able to speak a specific language is necessary for building friendships, but especially if one is interested in making friends with a certain nationality, the data does indicate that the ability of speaking a certain language does make things easier.
 
 
 <h2>The temporal dimension</h2>
@@ -153,7 +146,7 @@ We completed our friendship journey through time and space!
 Thanks for keeping the ball rolling all this time. As a reward, here are all our results in a nutshell:
 
 1. **Are inhabitants of urban cities more likely to have friends than inhabitants of rural areas?**
-- No
+- No.
 
 2. **How well are people in the US connected?**
 - Roughly 25% of all US users form a large spread out cluster.
@@ -162,8 +155,8 @@ Thanks for keeping the ball rolling all this time. As a reward, here are all our
 
 3. **Does one's practices religion or spoken language influence the process of making friends?**
 - Religion generally does not seems to influence this process at all.
-- Language on the other side, do play an important role:
-  - Some languages, due to the fact that so many people speak them, are a smart investment when it comes to making friends.
+- Languages on the other side, do play an important role:
+  - Some languages, due to the fact that so many people speak them, are worth being learnt when it comes to making friends.
   - Especially if you are interested in making friends with individuals from certain countries, as intuition already suggests, the data indicates that learning particular languages can make a huge difference.
 
 4. **How often do users visit each other?**
@@ -173,6 +166,9 @@ Thanks for keeping the ball rolling all this time. As a reward, here are all our
 5. **When do users visit each other?**
 - In spring and summer, the same everywhere in the world.
 
-Interpreting these results against the background of how to increase your friend network as efficiently as possible, we state: wait for spring and summer, go to the well-connected big cities and get to know as much people as possible. In the meantime, never forget:
+Interpreting these results against the background of how to increase your friend network as efficiently as possible, we state: learn the language of the country you want to move to, wait for spring and summer, go to the well-connected big cities like New York and Los Angeles and get to know as much people as possible. In the meantime, never forget:
 
-> "When you live with an open heart, unexpected, joyful things happen." Oprah Winfrey
+> Look for the bare necessities
+> The simple bare necessities
+> Forget about your worries and your strife
+> - Phil Harris & Bruce Reitherman
