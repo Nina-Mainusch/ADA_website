@@ -48,7 +48,7 @@ Living in the US or not, urban users have the same amount of friends than rural 
 -->
 --------------------------------------
 
-**Investigating the structure of the social networks**
+**How well are people in the US connected?**
 
 We have discovered that the number of friends does not differ much between urban and rural inhabitants. An interesting follow up would be to look at how the friendship network is structured, is the network graph limited to a number of smaller subgraphs, corresponding to the geographical location of users? Or are the users of the network more strongly connected across space?
 
@@ -93,7 +93,9 @@ TODO: Devrim: what about RQ4?
 Next to the spatial dimension, there is the whole temporal aspect of friendship. When do people visit each other? And how often? Does it depend on whether they live in a city or not or on the current season?
 We will start to dive into it by inspecting how often users visit each other. Remember, the period where the data was collected is between April 2008 and October 2010, so we will inspect how often users visited each other in this period.
 
-As before we start with the behaviour of the **Non-US citizens**:
+**How often do users visit each other?**
+
+As before we start with the behaviour of the **Non-US citizens**.
 
 {% include Friend_visit_non_US_distribution.html %}
 
@@ -112,7 +114,6 @@ There seems to be a similar pattern present for the users that live in the US: m
 Interestingly enough, tables seem to have turned: for US citizens, the more intense friendships are between users that live in rural areas, where urban users have more sporadic friendships.
 
 Summing up we conclude that if you are a social butterfly and want to have as many loose friendships as possible, you should move to a rural area outside of the US or to a big city inside the US. However if you are interested in deep friendships, you should rather go to a city outside of the US or to the rural areas of the US.
-
 
 The question that is left unanswered is when do users visit each other? To find this out we will divide each checkin that was a visit to a friend in four categories, one for each season: spring, summer, autumn and winter. The months _December to February are winter_, _March to May are spring_, _June to August summer_ and _September to November autumn_.
 **Remark:** Remember our data collection starts in April 2008, so the values for winter and spring of 2008 are a bit underestimated. The data collection ended in October 2010, so there the values for autumn and winter will be underestimated. The most reliable year for interpretation will therefore be 2009, so we focus our conclusions on those.
