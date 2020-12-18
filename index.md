@@ -136,7 +136,7 @@ For the year 2009 we can see that most people visited each other in spring and s
 
 The same pattern can be found for the year 2009 for them: the median value for spring and summer is again higher than for autumn and winter.
 
-Drawing a conclusion, we can state that you have the best chances to meet new people at spring or summer.
+Drawing a conclusion, we can state that you have the best chances to meet new people in spring or summer.
 
 --------------------------------------
 
