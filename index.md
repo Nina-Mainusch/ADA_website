@@ -58,7 +58,7 @@ We also decided to only use US checkins. This is because we were mostly interest
 
 What we discovered is that, for both datasets, the largest cluster, with roughly 25% of users, had a pretty even distribution of cities. There was no city clearly dominating. What's interesting about this is that many users are quite tightly connected, despite great distances separating them. Thus, it seems that the social networks really do serve to eliminate great spatial distances limiting our ability to connect with other people. This means that for people looking to make friends in different places, joining a social network is probably a great idea since you end up connected to people living in the entire country, usually by only a few degrees of separation. The largest cluster for the Brightkite dataset can be seen below.
 
-![City distribution](/blob/gh-pages/images/B1_us.png)
+![City distribution](/images/B1_us.png)
 
 {% include B1_us.html %}
 
