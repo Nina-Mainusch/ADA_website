@@ -137,12 +137,14 @@ Thanks for keeping the ball rolling all this time. As a reward, here are all our
 No
 
 2. **How well are people in the US connected?**
-TODO Carl
+- Roughly 25% of all US users are form a large spread out cluster.
+- The rest of the clusters are much smaller and usually concentrated in one city or state.
+- Users from the cities New York and Los Angeles seem to be particularly well-connected, as these cities are strongly represented in most clusters.
 
 3. TODO Devvis part
 
 4. **How often do users visit each other?**
-- people have loose friendships in the rural areas outside of the US or in big city inside the US
+- people have loose friendships in the rural areas outside of the US or in big city inside the US.
 - people have deep friendships in the cities outside of the US or in the rural areas inside the US.
 
 5. **When do users visit each other?** 
