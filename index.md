@@ -50,7 +50,7 @@ We also decided to only use US checkins. This is because we were mostly interest
 
 What we discovered is that, for both datasets, the largest cluster, with roughly 25% of users, had a pretty even distribution of cities. There was no city clearly dominating. What's interesting about this is that many users are quite tightly connected, despite great distances separating them. Thus, it seems that the social networks really do serve to eliminate great spatial distances limiting our ability to connect with other people. This means that for people looking to make friends in different places, joining a social network is probably a great idea since you end up connected to people living in the entire country, usually by only a few degrees of separation. The largest cluster for the Brightkite dataset can be seen below.
 
-![](https://nina-mainusch.github.io/ADA_website/images/B1_us.png)
+{% include B1_dist.html %}
 
 {% include B1_us.html %}
 
@@ -58,12 +58,12 @@ However, for the smaller clusters (100-2000 users) there was almost always one c
 
 Below, the third largest cluster in the Brightkite dataset, which is dominated by users living in Denver and Boulder, CO.
 
-![](https://nina-mainusch.github.io/ADA_website/images/B3_us.png)
+{% include B3_dist.html %}
 {% include B3_us.html %}
 
 Below, the third largest cluster in the Gowalla dataset, which is dominated by users living in Austin, TX.
 
-![](https://nina-mainusch.github.io/ADA_website/images/G3_us.png)
+{% include G3_dist.html %}
 {% include G3_us.html %}
 
 --------------------------------------
