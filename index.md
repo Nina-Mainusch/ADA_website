@@ -32,21 +32,13 @@ The next step is to compute whether a user lives in a city, which we will do by 
 
 {% include urban_rural_friends_non_US.html %}
 
-First, we can observe that in general more people live in rural areas than in cities. Each person has at least one friend and 75% at least 9 or 10. The difference arises only in the maximum number of friends. Some users that live in cities have an incredible high number of friends, i.e. up to 1458. For users that live in rural areas, the maximum number of friends is 1066. This indicates that living in a city outside the US does not necessarily increase your chances of having more friends! What about the US then? Should we move to the US if we want to increase the amount of friends we have?
-<!---
-{% include urban_rural_friends_non_US_distribution.html %}
--->
-
-To get a first grasp how the situation looks like for **US citizens**, we look at the table of results.
+First, we can observe that in general more people live in rural areas than in cities. Each person has at least one friend and 75% at least 9 or 10. The difference arises only in the maximum number of friends. Some users that live in cities have an incredible high number of friends, i.e. up to 1458. For users that live in rural areas, the maximum number of friends is 1066. This indicates that living in a city outside the US does not necessarily increase your chances of having more friends! What about the US then? Should we move to the US if we want to increase the amount of friends we have? To get a first grasp how the situation looks like for **US citizens**, we look at the table of results.
 
 {% include urban_rural_friends_US.html %}
 
 Again, more people live in rural areas than in cities and the characteristics differ only in the maximum number of friends, which are higher for urban users. 
 Living in the US or not, urban users have the same amount of friends than rural users. So when deciding where to live to increase your chances of having more friends, it does not matter whether you move to a rural or urban area. 
-<!---
-{% include urban_rural_friends_US_distribution.html %}
--->
---------------------------------------
+
 
 **How well are people in the US connected?**
 
