@@ -170,5 +170,5 @@ Interpreting these results against the background of how to increase your friend
 
 > Look for the bare necessities \
 > The simple bare necessities \
-> Forget about your worries and your strife \ 
+> Forget about your worries and your strife 
 > -Phil Harris & Bruce Reitherman
