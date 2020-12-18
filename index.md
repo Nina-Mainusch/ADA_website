@@ -8,7 +8,7 @@ There are countless psychological guides on how to make friends. And undoubtedly
 
 Our research is concerned with exactly these external factors that influence our social network. We have looked at two **location-based social network** datasets. Location what? Location-based social networks are social networks that use GPS data to locate you and that let you broadcast your location and other content from your mobile device. So to give an example: Imagine you travel to London for business. You know people there, but you haven't had the chance to send them a message. However, you are connected with them on Foursquare, one of the biggest location-based social networks. All you have to do when your train arrives is to _check-in_ to London's train station. Your contacts will immediately know you have arrived and suddenly, they begin contacting you saying “Hey there, I didn't know you were in town. Let's meet up!.”
 
-There are some more location-based social networks, like [Gowalla](https://en.wikipedia.org/wiki/Gowalla) and [Brightkite](https://en.wikipedia.org/wiki/Brightkite). Unfortunately those two no longer appear to be in operation, however Gowalla announced a potential comeback for 2021. Nevertheless from the time when they were active, [Gowalla](https://snap.stanford.edu/data/loc-Gowalla.html) and [Brightkite](https://snap.stanford.edu/data/loc-Brightkite.html) collected their user's data and made it publicly available. These users have checked in to various locations all over the world between _April 2008_ and _October 2010_. For each check-in, we know the geographical location, the exact time, the user and all the friends of the user. Based on these check-ins, we could compute the home location of each user and whether or not a check-in was a visit to a friend or not. We will use this data as an unconventional approach to investigate friendship across time and space, providing insights about the external factors that determine someone's social circle, like the place of residence and the time of the year.
+There are some more location-based social networks, like [Gowalla](https://en.wikipedia.org/wiki/Gowalla) and [Brightkite](https://en.wikipedia.org/wiki/Brightkite). Unfortunately those two no longer appear to be in operation, however Gowalla announced a potential comeback for 2021. Nevertheless, from the time when they were active, [Gowalla](https://snap.stanford.edu/data/loc-Gowalla.html) and [Brightkite](https://snap.stanford.edu/data/loc-Brightkite.html) collected their user's data and made it publicly available. These users have checked in to various locations all over the world between _April 2008_ and _October 2010_. For each check-in, we know the geographical location, the exact time, the user and all the friends of the user. Based on these check-ins, we could compute the home location of each user and whether or not a check-in was a visit to a friend or not. We will use this data as an unconventional approach to investigate friendship across time and space, providing insights about the external factors that determine someone's social circle, like the place of residence and the time of the year.
 
 There is nothing more to say in this introduction than: buckle up, sit back, and get ready to get answers to questions like "Where are people best connected? At what time do I make the most friends? Where do I find the most intense friendships?".
 
@@ -72,7 +72,7 @@ Below, the third largest cluster in the Gowalla dataset, which is dominated by u
 **How does one's practiced religion and spoken language influence the process of making friends?**
 
 Up until now, we talked about how one's home location influences the making of friends, and a bit further down we will talk about how the season of the year comes into play, but what about other properties; more personal properties.
-Two of these features, we were interested in, were language that one speaks and the religion that one practices. Since there is no way of knowing, which religion each of the users believed to and whether users were polygloths or just spoke one single language, we will simplify the matter but assuming that each user in one particular country speaks only **one** language and practices only **one** religion: the ones, that the majority of said country do.
+Two of these features, we were interested in, were language that one speaks and the religion that one practices. Since there is no way of knowing which religion each of the users believed to and whether users were polyglots or just spoke one single language, we will simplify the matter but assuming that each user in one particular country speaks only **one** language and practices only **one** religion: the ones, that the majority of said country do.
 Since these meta information about countries were not readily available, we crawled the Internet in order to obtain the main religions and spoken languages for each country.
 
 In order to get a good grasp what kind of religions/languages we considered and how they are distributed over the world, the two images below illustrate a world view in respect to each of those two properties.
@@ -90,7 +90,7 @@ Here, we can see the corresponding network for religions.
 
 {% include friendships_religions.html %}
 
-Contrary to what many might think, it is great to see that there are not clear subsets in this network that correspond to more general religious beliefs. What we mean by this, is that the religions like the [Catholicism](https://simple.wikipedia.org/wiki/Catholicism), [Protestantism](https://simple.wikipedia.org/wiki/Protestantism) and [Christian Orthodoxy](https://en.wikipedia.org/wiki/Orthodoxy), all of which belong to Christianity, do not form a closed subnetwork. Instead, we can even observe a strong connection between [Anglicanism](https://simple.wikipedia.org/wiki/Anglicanism) and [Islam](https://simple.wikipedia.org/wiki/Islam), both of which belonging to religious beliefs which are often thought to have more [complicated history](https://en.wikipedia.org/wiki/Christianity_and_Islam). Even though we would have loved to see clearer differentiation and subnetworks from a scientific perspective, this means that when we talk about making friends, our results give reason to believe that religion does not seem to matter!
+Contrary to what people might think, it is great to see that there are not clear subsets in this network that correspond to more general religious beliefs. What we mean by this, is that the religions like the [Catholicism](https://simple.wikipedia.org/wiki/Catholicism), [Protestantism](https://simple.wikipedia.org/wiki/Protestantism) and [Christian Orthodoxy](https://en.wikipedia.org/wiki/Orthodoxy), all of which belong to Christianity, do not form a closed subnetwork. Instead, we can even observe a strong connection between [Anglicanism](https://simple.wikipedia.org/wiki/Anglicanism) and [Islam](https://simple.wikipedia.org/wiki/Islam), both of which belonging to religious beliefs which are often thought to have more [complicated history](https://en.wikipedia.org/wiki/Christianity_and_Islam). Even though we would have loved to see clearer differentiation and subnetworks from a scientific perspective, this means that when we talk about making friends, our results give reason to believe that religion does not seem to matter!
 
 Next, let us consider the network in respect to spoken languages.
 
@@ -108,7 +108,7 @@ We will start to dive into it by inspecting how often users visit each other. Re
 
 **How often do users visit each other?**
 
-As before we start with the behaviour of the **Non-US citizens**.
+We start with inspecting the behaviour of the **Non-US citizens**. In the plot we visualise the distribution of friend visits over the whole period of the data collection.
 
 {% include Friend_visit_non_US_distribution.html %}
 
@@ -143,7 +143,7 @@ For the year 2009 we can see that most people visited each other in spring and s
 
 The same pattern can be found for the year 2009 for them: the median value for spring and summer is again higher than for autumn and winter.
 
-Drawing a conclusion, we can state that you have the best chances to meet new people at spring or summer time.
+Drawing a conclusion, we can state that you have the best chances to meet new people at spring or summer.
 
 --------------------------------------
 
@@ -173,6 +173,6 @@ Thanks for keeping the ball rolling all this time. As a reward, here are all our
 5. **When do users visit each other?**
 - In spring and summer, the same everywhere in the world.
 
-Interpreting these results against the background of how to increase your friend network as efficiently as possible, we state: wait for spring and summer, go to the well connected big cities and get to know as much people as possible. In the meantime, never forget:
+Interpreting these results against the background of how to increase your friend network as efficiently as possible, we state: wait for spring and summer, go to the well-connected big cities and get to know as much people as possible. In the meantime, never forget:
 
 > "When you live with an open heart, unexpected, joyful things happen." Oprah Winfrey
