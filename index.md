@@ -10,12 +10,13 @@ Our research is concerned with exactly these external factors that influence our
 
 There are more location-based social network, like Gowalla and [Brightkite](https://en.wikipedia.org/wiki/Brightkite). Unfortunately those two no longer appeared to be in operation, however [Gowalla announced a potential comeback for 2021](https://en.wikipedia.org/wiki/Gowalla). Nevertheless from the time when they were active, [Gowalla](https://snap.stanford.edu/data/loc-Gowalla.html) and [Brightkite](https://snap.stanford.edu/data/loc-Brightkite.html) collected their user's data and made it publicly available. These users have checked in to various locations all over the world between _April 2008_ and _October 2010_. For each check-in, we know the geographical location, the exact time, the user and all the friends of the user. Based on these checkins, we could compute the home location of each user and whether or not a check-in was a visit to a friend or not. We will use this data as an unconventional approach to investigate friendship across time and space, providing insights about the external factors that determine someone's social circle, like the place of residence and the time of the year.
 
+There is nothing more to say in this introduction than: buckle up, sit back, and get ready to get answers to questions like "Where are people best connected? At what time do I make the most friends? Where do I find the most intense friendships?".
+
 Let's start inspecting the home locations of our users. To calculate it, we discretised the world in 25x25 km cells, took all the check-ins of each user and calculated the home location as the average of all check-ins in the most frequently visited cell. This gives us a [85% accuracy of the true user's home location](https://cs.stanford.edu/people/jure/pubs/mobile-kdd11.pdf).
 
 {% include world_checkins.html %}
 
 We can see that the users are from all over the world, but a majority lives in either the US or Europe. To be precise, 81281 users live in the US and 76497 somewhere else. This is why in our later analysis, we will make a distinction between US and non-US users in order to not bias our results.
-
 
 <h2>The spatial dimension</h2>
 
