@@ -68,11 +68,11 @@ However, for the smaller clusters (100-2000 users) there was almost always one c
 
 {% include B3_us.html %}
 
-The third largest cluster in the Brightkite data set, which is dominated by users living in Denver and Boulder, CO.
+Above, the third largest cluster in the Brightkite data set, which is dominated by users living in Denver and Boulder, CO.
 
 {% include B3_us.html %}
 
-The third largest cluster in the Gowalla data set, which is dominated by users living in Austin, TX.
+Above, the third largest cluster in the Gowalla data set, which is dominated by users living in Austin, TX.
 
 --------------------------------------
 
