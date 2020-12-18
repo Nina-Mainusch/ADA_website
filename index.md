@@ -24,7 +24,7 @@ There are plenty of spatial factors that can determine how many friends you have
 
 **Are inhabitants of urban cities more likely to have friends than inhabitants of rural areas?**
 
-We will start with investigating whether inhabitants of urban cities are more likely to have friends than inhabitants of rural areas. In order to do so, we have to define what a city is. The [UN Statistical Commission](https://blogs.worldbank.org/sustainablecities/how-do-we-define-cities-towns-and-rural-areas) endorsed the Degree of Urbanization stating that cities are settlements which have a population of at least 50,000 inhabitants in contiguous dense grid cells (>1,500 inhabitants per km^2). Applying this criteria, we are left with 1256 non-US cities and 328 US cities.
+We will start with investigating whether inhabitants of urban cities are more likely to have friends than inhabitants of rural areas. In order to do so, we have to define what a city is. The [UN Statistical Commission](https://blogs.worldbank.org/sustainablecities/how-do-we-define-cities-towns-and-rural-areas) endorsed the Degree of Urbanization stating that cities are settlements which have a population of at least 50,000 inhabitants in contiguous dense grid cells (>1,500 inhabitants per km^2^). Applying this criteria, we are left with 1256 non-US cities and 328 US cities.
 
 {% include world_cities.html %}
 
@@ -32,21 +32,13 @@ The next step is to compute whether a user lives in a city, which we will do by 
 
 {% include urban_rural_friends_non_US.html %}
 
-First, we can observe that in general more people live in rural areas than in cities. Each person has at least one friend and 75% at least 9 or 10. The difference arises only in the maximum number of friends. Some users that live in cities have an incredible high number of friends, i.e. up to 1458. For users that live in rural areas, the maximum number of friends is 1066. This indicates that living in a city outside the US does not necessarily increase your chances of having more friends! What about the US then? Should we move to the US if we want to increase the amount of friends we have?
-<!---
-{% include urban_rural_friends_non_US_distribution.html %}
--->
-
-To get a first grasp how the situation looks like for **US citizens**, we look at the table of results.
+First, we can observe that in general more people live in rural areas than in cities. Each person has at least one friend and 75% at least 9 or 10. The difference arises only in the maximum number of friends. Some users that live in cities have an incredible high number of friends, i.e. up to 1458. For users that live in rural areas, the maximum number of friends is 1066. This indicates that living in a city outside the US does not necessarily increase your chances of having more friends! What about the US then? Should we move to the US if we want to increase the amount of friends we have? To get a first grasp how the situation looks like for **US citizens**, we look at the table of results.
 
 {% include urban_rural_friends_US.html %}
 
 Again, more people live in rural areas than in cities and the characteristics differ only in the maximum number of friends, which are higher for urban users. 
 Living in the US or not, urban users have the same amount of friends than rural users. So when deciding where to live to increase your chances of having more friends, it does not matter whether you move to a rural or urban area. 
-<!---
-{% include urban_rural_friends_US_distribution.html %}
--->
---------------------------------------
+
 
 **How well are people in the US connected?**
 
@@ -58,19 +50,21 @@ We also decided to only use US checkins. This is because we were mostly interest
 
 What we discovered is that, for both datasets, the largest cluster, with roughly 25% of users, had a pretty even distribution of cities. There was no city clearly dominating. What's interesting about this is that many users are quite tightly connected, despite great distances separating them. Thus, it seems that the social networks really do serve to eliminate great spatial distances limiting our ability to connect with other people. This means that for people looking to make friends in different places, joining a social network is probably a great idea since you end up connected to people living in the entire country, usually by only a few degrees of separation. The largest cluster for the Brightkite dataset can be seen below.
 
-![City distribution](https://github.com/Nina-Mainusch/ADA_website/blob/gh-pages/images/B1_us.png)
+{% include B1_dist.html %}
 
 {% include B1_us.html %}
 
-However, for the smaller clusters (100-2000 users) there was almost always one city or state clearly dominating. Below are two geographically of these constrained clusters, where more than 40 % of users are from the same city/state. So the structure of the friendship graph is clearly dependent on the geographical location of the users, which was also concluded in the original paper in Figure 2A. This raises a number of questions which would have been interesting to investigate, given more time. For instance, it might be interesting to investigate the difference between users that end up in geographically restricted clusters, compared to those that end up in the larger, more spread out, clusters. Another interesting thing to investigate would be if inhabitants of certain cities are more likely to end up in isolated clusters. What we observed was that for the two largest cities in the US, New York and Los Angeles (although in gowalla Austin had more users), there did not seem to be any clusters isolated in the cities. Instead, both cities were strongly represented in almost all the larger clusters, while never completely dominating. Maybe this is an indication that users living in these two cities are more connected with the rest of the country. Unfortunately, analysing the clusters was extremely computationally intensive, due to the size of the networks and having to find cities for all users, so we did not have the resources to conduct a rigorous investigation of these questions. But it might be interesting to look at more closely, given more time and resources.
+However, for the smaller clusters (100-2000 users) there was almost always one city or state clearly dominating. So the structure of the friendship graph is clearly dependent on the geographical location of the users, which was also concluded in the original [paper](https://dl.acm.org/doi/pdf/10.1145/2020408.2020579?casa_token=3q1JcL4gnjgAAAAA:_bOg0ajxYsMrA2Rt5fM7eUIwmO87nvfY_lkUb1G4hoE0Y-spNdZDdbNXVpFM8Xex9-fGOfZFklyDhw) in Figure 2A. This raises a number of questions which would have been interesting to investigate, given more time. For instance, it might be interesting to investigate the difference between users that end up in geographically restricted clusters, compared to those that end up in the larger, more spread out, clusters. Another interesting thing to investigate would be if inhabitants of certain cities are more likely to end up in isolated clusters. What we observed was that for the two largest cities in the US, New York and Los Angeles (although in gowalla Austin had more users), there did not seem to be any clusters isolated in the cities. Instead, both cities were strongly represented in almost all the larger clusters, while never completely dominating. Maybe this is an indication that users living in these two cities are more connected with the rest of the country. Unfortunately, analysing the clusters was extremely computationally intensive, due to the size of the networks and having to find cities for all users, so we did not have the resources to conduct a rigorous investigation of these questions. But it might be interesting to look at more closely, given more time and resources.
 
+Below, the third largest cluster in the Brightkite dataset, which is dominated by users living in Denver and Boulder, CO.
+
+{% include B3_dist.html %}
 {% include B3_us.html %}
 
-The third largest cluster in the Brightkite dataset, which is dominated by users living in Denver and Boulder, CO.
+Below, the third largest cluster in the Gowalla dataset, which is dominated by users living in Austin, TX.
 
-{% include B5_us.html %}
-
-The fifth largest cluster in the Brightkite dataset, which is dominated by users living in Phoenix, AZ.
+{% include G3_dist.html %}
+{% include G3_us.html %}
 
 --------------------------------------
 
@@ -115,34 +109,49 @@ Interestingly enough, tables seem to have turned: for US citizens, the more inte
 
 Summing up we conclude that if you are a social butterfly and want to have as many loose friendships as possible, you should move to a rural area outside of the US or to a big city inside the US. However if you are interested in deep friendships, you should rather go to a city outside of the US or to the rural areas of the US.
 
-The question that is left unanswered is when do users visit each other? To find this out we will divide each checkin that was a visit to a friend in four categories, one for each season: spring, summer, autumn and winter. The months _December to February are winter_, _March to May are spring_, _June to August summer_ and _September to November autumn_.
+**When do users visit each other?**
+
+The question that is left unanswered is when do users visit each other? To investigate this we will divide each checkin that was a visit to a friend in four categories, one for each season: spring, summer, autumn and winter. The months _December to February are winter_, _March to May are spring_, _June to August summer_ and _September to November autumn_.
 **Remark:** Remember our data collection starts in April 2008, so the values for winter and spring of 2008 are a bit underestimated. The data collection ended in October 2010, so there the values for autumn and winter will be underestimated. The most reliable year for interpretation will therefore be 2009, so we focus our conclusions on those.
 
-Having divided the year into seasons, we examine for each checkin that was a friend's visit in which season it took place. Then we group by user, year and season and count how often people visited their friends there. Common sense tells us of course, that people stay inside in winter and go out most in summer. Does this hypothesis hold for **users outside of the US**? The results are summarised in the following boxplot.
+Having divided the year into seasons, we group by user, year and season and count how often people visited their friends there. Common sense tells us of course, that people stay inside in winter and go out most in summer. Does this hypothesis hold for **users outside of the US**? 
 
 {% include Friend_visit_non_US_season.html  %}
 
-In 2008, we said we can only reliably compare autumn and winter, since the data collection started
-
-Remark: 
-correct for missing months: 2008 starts in April
-2010 end ins October
+For the year 2009 we can see that most people visited each other in spring and summer (median value of friend visits is 417.5 and 418, respectively), and fewer people went out in autumn and winter (median value of friend visits is 105 and 79, respectively). This is consistent with our hypothesis that people move more when it gets warm again, maybe it is a bit unexpected that people on average visit as much friends in spring as in summer. One last time, let's inspect the situation for the **US users**.
 
 {% include Friend_visit_US_season.html  %}
 
+The same pattern can be found for the year 2009 for them: the median value for spring and summer is again higher than for autumn and winter.
 
-
-
+Drawing a conclusion, we can state that you have the best chances to meet new people at spring or summer time.
 
 --------------------------------------
 
 <h2>What about you?</h2>
   
 We completed our friendship journey through time and space! 
+Thanks for keeping the ball rolling all this time. As a reward, here are all our results in a nutshell:
 
-TODO
-  
-  
+1. **Are inhabitants of urban cities more likely to have friends than inhabitants of rural areas?** 
+No
 
+2. **How well are people in the US connected?**
+- Roughly 25% of all US users form a large spread out cluster.
+- The rest of the clusters are much smaller and usually concentrated in one city or state.
+- Users from the cities New York and Los Angeles seem to be particularly well-connected, as these cities are strongly represented in most clusters.
+
+3. TODO Devvis part
+
+4. **How often do users visit each other?**
+- people have loose friendships in the rural areas outside of the US or in big city inside the US.
+- people have deep friendships in the cities outside of the US or in the rural areas inside the US.
+
+5. **When do users visit each other?** 
+In spring and summer, the same everywhere in the world.
+
+Interpreting these results against the background of how to increase your friend network as efficiently as possible, we state: wait for spring and summer, go to the well connected big cities and get to know as much people as possible. In the meantime, never forget:
+ 
+> "When you live with an open heart, unexpected, joyful things happen." Oprah Winfrey 
 
 
