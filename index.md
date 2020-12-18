@@ -1,12 +1,12 @@
 **Why do friendships matter?**
 
-Our society tends to place an emphasis on romantic relationships, and we think that just finding that right person will make us happy and fulfilled. But [research](https://onlinelibrary.wiley.com/doi/abs/10.1111/pere.12187) shows that friends are actually even more important to our psychological well-being, especially over the course of our lifes. Friendships have a huge impact on our mental health and happiness. Good friends relieve stress, provide comfort and joy, and prevent loneliness and isolation. Developing close friendships can also have a powerful impact on your physical health. Friends are even tied to longevity, since a study from [Harvard](https://news.harvard.edu/gazette/story/2017/04/over-nearly-80-years-harvard-study-has-been-showing-how-to-live-a-healthy-and-happy-life/), conducted over 80 years, found that maintaining a rich network of friends can significantly increase your life. They even state that ["Loneliness is as powerful as smoking or alcoholism"](https://www.youtube.com/watch?v=8KkKuTCFvzI&feature=emb_title), meaning that a lack of social connections may pose a severe a risk to your health. But you can't make friendships out of thin air. Many of us struggle to meet people and develop quality connections. Whatever your age or circumstances, it’s never too late to make new friends and greatly improve your social life, emotional health, and overall well-being. 
+Our society tends to place an emphasis on romantic relationships, and we think that just finding that right person will make us happy and fulfilled. But [research](https://onlinelibrary.wiley.com/doi/abs/10.1111/pere.12187) shows that friends are actually even more important to our psychological well-being, especially over the course of our lifes. Friendships have a huge impact on our mental health and happiness. Good friends relieve stress, provide comfort and joy, and prevent loneliness and isolation. Developing close friendships can also have a powerful impact on your physical health. Friends are even tied to longevity, since a study from [Harvard](https://news.harvard.edu/gazette/story/2017/04/over-nearly-80-years-harvard-study-has-been-showing-how-to-live-a-healthy-and-happy-life/), conducted over 80 years, found that maintaining a rich network of friends can significantly increase your life. They even state that ["Loneliness is as powerful as smoking or alcoholism"](https://www.youtube.com/watch?v=8KkKuTCFvzI&feature=emb_title), meaning that a lack of social connections may pose a severe a risk to your health. But you can't make friendships out of thin air. Many of us struggle to meet people and develop quality connections. Whatever your age or circumstances, it’s never too late to make new friends and greatly improve your social life, emotional health, and overall well-being.
 
-**What would your approach to making new friends be?** 
+**What would your approach to making new friends be?**
 
 There are countless psychological guides on how to make friends. And undoubtedly this is an essential aspect when approaching new people. But what if it's not just your social skills that determine whether you make friends? What if you could multiply your chances of making friends and vastly increase your friendship network by moving to a certain place? At a certain time of the year?
 
-Our research is concerned with exactly these external factors that influence our social network. We have looked at two **location-based social network** datasets. Location what? Location-based social networks are social networks that use GPS data to locate you and that let you broadcast your location and other content from your mobile device. So to give an example: Imagine you travel to London for business. You know people there, but you haven't had the chance to send them a message. However, you are connected with them on Foursquare, one of the biggest location-based social networks. All you have to do when your train arrives is to _checkin_ to London's train station when you arrive. All your contacts will immediately know you have arrived and suddenly, they begin to contact you saying “Hey there, I didn't know you were in town. Let's meet up!.” 
+Our research is concerned with exactly these external factors that influence our social network. We have looked at two **location-based social network** datasets. Location what? Location-based social networks are social networks that use GPS data to locate you and that let you broadcast your location and other content from your mobile device. So to give an example: Imagine you travel to London for business. You know people there, but you haven't had the chance to send them a message. However, you are connected with them on Foursquare, one of the biggest location-based social networks. All you have to do when your train arrives is to _checkin_ to London's train station when you arrive. All your contacts will immediately know you have arrived and suddenly, they begin to contact you saying “Hey there, I didn't know you were in town. Let's meet up!.”
 
 There are some more location-based social networks, like [Gowalla](https://en.wikipedia.org/wiki/Gowalla) and [Brightkite](https://en.wikipedia.org/wiki/Brightkite). Unfortunately those two no longer appear to be in operation, however Gowalla announced a potential comeback for 2021. Nevertheless from the time when they were active, [Gowalla](https://snap.stanford.edu/data/loc-Gowalla.html) and [Brightkite](https://snap.stanford.edu/data/loc-Brightkite.html) collected their user's data and made it publicly available. These users have checked in to various locations all over the world between _April 2008_ and _October 2010_. For each check-in, we know the geographical location, the exact time, the user and all the friends of the user. Based on these checkins, we could compute the home location of each user and whether or not a check-in was a visit to a friend or not. We will use this data as an unconventional approach to investigate friendship across time and space, providing insights about the external factors that determine someone's social circle, like the place of residence and the time of the year.
 
@@ -36,8 +36,8 @@ First, we can observe that in general more people live in rural areas than in ci
 
 {% include urban_rural_friends_US.html %}
 
-Again, more people live in rural areas than in cities and the characteristics differ only in the maximum number of friends, which are higher for urban users. 
-Living in the US or not, urban users have the same amount of friends than rural users. So when deciding where to live to increase your chances of having more friends, it does not matter whether you move to a rural or urban area. 
+Again, more people live in rural areas than in cities and the characteristics differ only in the maximum number of friends, which are higher for urban users.
+Living in the US or not, urban users have the same amount of friends than rural users. So when deciding where to live to increase your chances of having more friends, it does not matter whether you move to a rural or urban area.
 
 
 **How well are people in the US connected?**
@@ -46,7 +46,7 @@ We have discovered that the number of friends does not differ much between urban
 
 To investigate this question we used a community detection algorithm on the friendship graph. There are a number of different community detection algorithms, however, due to the size of the datasets we had to restrict ourselves to algorithms that are pretty fast. We settled for the [Walktrap algorithm](http://arxiv.org/abs/physics/0512106). The algorithm tries to find densely connected subgraphs by performing random walks. The idea is that short random walks tend to stay in the same community.
 
-We also decided to only use US checkins. This is because we were mostly interested in seeing how cities are distributed in these clusters and introducing country borders would make things much more complicated. 
+We also decided to only use US checkins. This is because we were mostly interested in seeing how cities are distributed in these clusters and introducing country borders would make things much more complicated.
 
 What we discovered is that, for both datasets, the largest cluster, with roughly 25% of users, had a pretty even distribution of cities. There was no city clearly dominating. What's interesting about this is that many users are quite tightly connected, despite great distances separating them. Thus, it seems that the social networks really do serve to eliminate great spatial distances limiting our ability to connect with other people. This means that for people looking to make friends in different places, joining a social network is probably a great idea since you end up connected to people living in the entire country, usually by only a few degrees of separation. The largest cluster for the Brightkite dataset can be seen below.
 
@@ -69,14 +69,16 @@ Below, the third largest cluster in the Gowalla dataset, which is dominated by u
 --------------------------------------
 
 
-TODO: Devrim: what about RQ4?
-4. How does the interconnection between countries/continents differ? Does it depend on the language or religion?
+**How does one's practiced religion and spoken language influence the process of making friends?**
 
-**Non-US citizens**
+Up until now, we talked about how one's home location influences the making of friends, and a bit further down we will talk about how the season of the year comes into play, but what about other properties; more personal properties.
+Two of these features, we were interested in, were language that one speaks and the religion that one practices. Since there is no way of knowing, which religion each of the users believed to and whether users were polygloths or just spoke one single language, we will simplify the matter but assuming that each user in one particular country speaks only **one** language and practices only **one** religion: the ones, that the majority of said country do.
+Since these meta information about countries were not readily available, we crawled the Internet in order to obtain the main religions and spoken languages for each country.
 
-**US citizens**
+In order to get a good grasp,about what kind of religions/languages we considered and how they are distributed over the world, the two images below illustrate a world view in respect to each of those two properties.
 
-
+{% include world_religions.html %}
+{% include world_languages.html %}
 
 
 --------------------------------------
@@ -114,7 +116,7 @@ Summing up we conclude that if you are a social butterfly and want to have as ma
 The question that is left unanswered is when do users visit each other? To investigate this we will divide each checkin that was a visit to a friend in four categories, one for each season: spring, summer, autumn and winter. The months _December to February are winter_, _March to May are spring_, _June to August summer_ and _September to November autumn_.
 **Remark:** Remember our data collection starts in April 2008, so the values for winter and spring of 2008 are a bit underestimated. The data collection ended in October 2010, so there the values for autumn and winter will be underestimated. The most reliable year for interpretation will therefore be 2009, so we focus our conclusions on those.
 
-Having divided the year into seasons, we group by user, year and season and count how often people visited their friends there. Common sense tells us of course, that people stay inside in winter and go out most in summer. Does this hypothesis hold for **users outside of the US**? 
+Having divided the year into seasons, we group by user, year and season and count how often people visited their friends there. Common sense tells us of course, that people stay inside in winter and go out most in summer. Does this hypothesis hold for **users outside of the US**?
 
 {% include Friend_visit_non_US_season.html  %}
 
@@ -129,11 +131,11 @@ Drawing a conclusion, we can state that you have the best chances to meet new pe
 --------------------------------------
 
 <h2>What about you?</h2>
-  
-We completed our friendship journey through time and space! 
+
+We completed our friendship journey through time and space!
 Thanks for keeping the ball rolling all this time. As a reward, here are all our results in a nutshell:
 
-1. **Are inhabitants of urban cities more likely to have friends than inhabitants of rural areas?** 
+1. **Are inhabitants of urban cities more likely to have friends than inhabitants of rural areas?**
 No
 
 2. **How well are people in the US connected?**
@@ -147,11 +149,9 @@ No
 - people have loose friendships in the rural areas outside of the US or in big city inside the US.
 - people have deep friendships in the cities outside of the US or in the rural areas inside the US.
 
-5. **When do users visit each other?** 
+5. **When do users visit each other?**
 In spring and summer, the same everywhere in the world.
 
 Interpreting these results against the background of how to increase your friend network as efficiently as possible, we state: wait for spring and summer, go to the well connected big cities and get to know as much people as possible. In the meantime, never forget:
- 
-> "When you live with an open heart, unexpected, joyful things happen." Oprah Winfrey 
 
-
+> "When you live with an open heart, unexpected, joyful things happen." Oprah Winfrey
