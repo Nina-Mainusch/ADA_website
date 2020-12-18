@@ -6,9 +6,9 @@ Our society tends to place an emphasis on romantic relationships, and we think t
 
 There are countless psychological guides on how to make friends. And undoubtedly this is an essential aspect when approaching new people. But what if it's not just your social skills that determine whether you make friends? What if you could multiply your chances of making friends and vastly increase your friendship network by moving to a certain place? At a certain time of the year?
 
-Our research is concerned with exactly these external factors that influence our social network. We have looked at two **location-based social network** datasets. Location what? Location-based social networks are social networks that use GPS data to locate you and that let you broadcast your location and other content from your mobile device. So to give an example: Imagine you travel to London for business. You know people there, but you haven't had the chance to send them a message. However, you are connected with them on Foursquare, one of the biggest location-based social networks. All you have to do when your train arrives is to _checkin_ to London's train station when you arrive. All your contacts will immediately know you have arrived and suddenly, they begin to contact you saying “Hey, what's up, I didn't know you were in town. Let's meet up!.” 
+Our research is concerned with exactly these external factors that influence our social network. We have looked at two **location-based social network** datasets. Location what? Location-based social networks are social networks that use GPS data to locate you and that let you broadcast your location and other content from your mobile device. So to give an example: Imagine you travel to London for business. You know people there, but you haven't had the chance to send them a message. However, you are connected with them on Foursquare, one of the biggest location-based social networks. All you have to do when your train arrives is to _checkin_ to London's train station when you arrive. All your contacts will immediately know you have arrived and suddenly, they begin to contact you saying “Hey there, I didn't know you were in town. Let's meet up!.” 
 
-There are more location-based social network, like [Gowalla](https://en.wikipedia.org/wiki/Gowalla) and [Brightkite](https://en.wikipedia.org/wiki/Brightkite). Unfortunately those two no longer appear to be in operation, however Gowalla announced a potential comeback for 2021. Nevertheless from the time when they were active, [Gowalla](https://snap.stanford.edu/data/loc-Gowalla.html) and [Brightkite](https://snap.stanford.edu/data/loc-Brightkite.html) collected their user's data and made it publicly available. These users have checked in to various locations all over the world between _April 2008_ and _October 2010_. For each check-in, we know the geographical location, the exact time, the user and all the friends of the user. Based on these checkins, we could compute the home location of each user and whether or not a check-in was a visit to a friend or not. We will use this data as an unconventional approach to investigate friendship across time and space, providing insights about the external factors that determine someone's social circle, like the place of residence and the time of the year.
+There are some more location-based social networks, like [Gowalla](https://en.wikipedia.org/wiki/Gowalla) and [Brightkite](https://en.wikipedia.org/wiki/Brightkite). Unfortunately those two no longer appear to be in operation, however Gowalla announced a potential comeback for 2021. Nevertheless from the time when they were active, [Gowalla](https://snap.stanford.edu/data/loc-Gowalla.html) and [Brightkite](https://snap.stanford.edu/data/loc-Brightkite.html) collected their user's data and made it publicly available. These users have checked in to various locations all over the world between _April 2008_ and _October 2010_. For each check-in, we know the geographical location, the exact time, the user and all the friends of the user. Based on these checkins, we could compute the home location of each user and whether or not a check-in was a visit to a friend or not. We will use this data as an unconventional approach to investigate friendship across time and space, providing insights about the external factors that determine someone's social circle, like the place of residence and the time of the year.
 
 There is nothing more to say in this introduction than: buckle up, sit back, and get ready to get answers to questions like "Where are people best connected? At what time do I make the most friends? Where do I find the most intense friendships?".
 
@@ -32,22 +32,20 @@ The next step is to compute whether a user lives in a city, which we will do by 
 
 {% include urban_rural_friends_non_US.html %}
 
-First, we can observe that in general more people live in rural areas than in cities. Each person has at least one friend and 75% at least 9 or 10. The difference arises only in the maximum number of friends. Some users that live in cities have an incredible high number of friends, i.e. up to 1458. For users that live in rural areas, the maximum number of friends is 1066. Let's look at the distribution of friends of Non-US citizens, to visualise these results.
-
+First, we can observe that in general more people live in rural areas than in cities. Each person has at least one friend and 75% at least 9 or 10. The difference arises only in the maximum number of friends. Some users that live in cities have an incredible high number of friends, i.e. up to 1458. For users that live in rural areas, the maximum number of friends is 1066. This indicates that living in a city outside the US does not necessarily increase your chances of having more friends! What about the US then? Should we move to the US if we want to increase the amount of friends we have?
+<!---
 {% include urban_rural_friends_non_US_distribution.html %}
-
-We see the same as in the table, the distributions of friends are more or less the same, but for users living urban there are more extreme numbers of friends. This indicates that living in a city outside the US does not necessarily increase your chances of having more friends! What about the US then? Should we move to the US if we want to increase the amount of friends we have?
+-->
 
 To get a first grasp how the situation looks like for **US citizens**, we look at the table of results.
 
 {% include urban_rural_friends_US.html %}
 
-Again, more people live in rural areas than in cities and the characteristics differ only in the maximum number of friends, which are higher for urban users. Plotting the distribution, we can see clearly that they are more or less the same, but for users living urban there are more extreme numbers of friends.
-
-{% include urban_rural_friends_US_distribution.html %}
-
+Again, more people live in rural areas than in cities and the characteristics differ only in the maximum number of friends, which are higher for urban users. 
 Living in the US or not, urban users have the same amount of friends than rural users. So when deciding where to live to increase your chances of having more friends, it does not matter whether you move to a rural or urban area. 
-
+<!---
+{% include urban_rural_friends_US_distribution.html %}
+-->
 --------------------------------------
 
 **Investigating the structure of the social networks**
