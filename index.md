@@ -114,11 +114,18 @@ Interestingly enough, tables seem to have turned: for US citizens, the more inte
 Summing up we conclude that if you are a social butterfly and want to have as many loose friendships as possible, you should move to a rural area outside of the US or to a big city inside the US. However if you are interested in deep friendships, you should rather go to a city outside of the US or to the rural areas of the US.
 
 
-The question that is left unanswered is when do users visit each other? To find this out we will divide each checkin that was a visit to a friend in four categories, one for each season: spring, summer, autumn and winter. Since the seasons change for each site of the globe, we will focus on the checkins of **US citizens**. Thus the months december, january, februrary are winter, march to may are spring, june to august summer and september to november autumn.
+The question that is left unanswered is when do users visit each other? To find this out we will divide each checkin that was a visit to a friend in four categories, one for each season: spring, summer, autumn and winter. The months _December to Februrary are winter_, _March to May are spring_, _June to August summer_ and _September to November autumn_.
+**Remark:** Remember our data collection starts in April 2008, so the values for winter and spring of 2008 are a bit underestimated. The data collection ended in October 2010, so there the values for automn and winter will be underestimated. The most reliable year for interpretation will therefore be 2009, so we focus our conclusions on those.
+
+Having divided the year in seasons, we examine for each checkin that was a friend's visit in which season it took place. Then we group by user, year and season and count how often people visited their friends there. Common sense tells us of course, that people stay inside in winter and go out most in summer. Does this hypothesis hold for **users outside of the US**? The results are summarised in the following boxplot.
 
 {% include Friend_visit_non_US_season.html  %}
 
+In 2008 we said we can only reliably compare automn and winter, since the data collection started
 
+Remark: 
+correct for missing months: 2008 starts in april
+2010 end ins october
 
 {% include Friend_visit_US_season.html  %}
 
