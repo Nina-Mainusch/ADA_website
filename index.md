@@ -6,7 +6,7 @@ Our society tends to place an emphasis on romantic relationships and we think th
 
 There are countless psychological guides on how to make friends. And undoubtedly this is an essential aspect when approaching new people. But what if it's not just your social skills that determine whether you make friends? What if you could multiply your chances of making friends and vastly increase your friendship network by moving to a certain place? At a certain time of the year?
 
-Our research is concerned with exactly these external factors that influence our social network. We have looked at two **location-based social network** datasets. The users of those networks have checked in to various locations all over the world between April 2008 and October 2010. For each check-in, we know the geographical location, the exact time, the user and all the friends of the user. Based on these check-ins, we could compute the home location of each user and whether or not a check-in was a visit to a friend or not. We will use this data as an unconventional approach to investigate friendship across time and space, providing insights about the external factors that determine someone's social cirlce, like the place of residence and the time of the year.
+Our research is concerned with exactly these external factors that influence our social network. We have looked at two **location-based social network** datasets. The users of those networks have checked in to various locations all over the world between April 2008 and October 2010. For each checkin, we know the geographical location, the exact time, the user and all the friends of the user. Based on these checkins, we could compute the home location of each user and whether or not a checkin was a visit to a friend or not. We will use this data as an unconventional approach to investigate friendship across time and space, providing insights about the external factors that determine someone's social cirlce, like the place of residence and the time of the year.
 
 Let's start inspecting the home locations of our users. To calculate it, we discretised the world in 25x25 km cells, took all the checkins of each user and calculated the home location as the average of all checkins in the most frequently visited cell. This gives us a 85% accuracy of the true user's home location:
 
@@ -53,7 +53,7 @@ We have discovered that the number of friends does not differ much between urban
 
 To investigate this question we used a community detection algorithm on the friendship graph. There are a number of different community detection algorithms, however, due to the size of the datasets we had to restrict ourselves to algorithms that run in near linear time. We settled for the [Walktrap algorithm](http://arxiv.org/abs/physics/0512106). The algorithm tries to find densely connected subgraphs by performing random walks. The idea is that short random walks tend to stay in the same community.
 
-We also decided to only use US check-ins. This is because we were mostly interested in seeing how cities are distributed in these clusters and introducing country borders would make things much more complicated. 
+We also decided to only use US checkins. This is because we were mostly interested in seeing how cities are distributed in these clusters and introducing country borders would make things much more complicated. 
 
 What we discovered is that, for both datasets, the largest cluster had a pretty even distribution of cities. There was no city clearly dominating. Whats interesting about this is that it many users are quite tightly connected, despite great distances separating them. The largest cluster for the Brightkite dataset can be seen below.
 
@@ -88,7 +88,7 @@ TODO: Devrim: what about RQ4?
 
 <h2>The temporal dimension</h2>
 
-Next to the spatial dimension, there is the whole temporal aspect of friendship. When do people visit each other? And how often? Does it depend on whether they live in a city or not or on the season of the year?
+Next to the spatial dimension, there is the whole temporal aspect of friendship. When do people visit each other? And how often? Does it depend on whether they live in a city or not or on the current season?
 We will start do dive into it by inspecting how often users visit each other. Remember, the period where the data was collected is between April 2008 and October 2010, so we will inspect how often users visited each other in this period.
 
 As before we start with the behaviour of the **Non-US citizens**:
@@ -101,11 +101,9 @@ Interestingly enough we can notice that the distribution is approximately trimod
 
 Here we see quite clearly that there is a difference between people that live urban and those that live rural: users in cities visit each other more than users in rural areas! Moreover, we can say that most of the intense friendships are between people that live in cities, where people in rural areas have more sporadic friendships. Thus if you prefer to have intense friendships, you should definitely consider moving to a city outside of the US. But wait, maybe it is the same pattern for the US? Let's look at all our **US citizens**.
 
-
 {% include Friend_visit_US_distribution.html  %}
 
 There seems to be a similar pattern present for the users that live in the US: most of them have loose friendships, some are more intense and few are really profound. Again, we investigate which of these users live rural and which live urban.
-
 
 {% include Friend_visit_US_urban.html  %}
 
