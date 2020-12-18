@@ -117,22 +117,20 @@ Interestingly enough, tables seem to have turned: for US citizens, the more inte
 
 Summing up we conclude that if you are a social butterfly and want to have as many loose friendships as possible, you should move to a rural area outside of the US or to a big city inside the US. However if you are interested in deep friendships, you should rather go to a city outside of the US or to the rural areas of the US.
 
-The question that is left unanswered is when do users visit each other? To find this out we will divide each check-in that was a visit to a friend in four categories, one for each season: spring, summer, autumn and winter. The months _December to February are winter_, _March to May are spring_, _June to August summer_ and _September to November autumn_.
+**When do users visit each other?**
+
+The question that is left unanswered is when do users visit each other? To investigate this we will divide each checkin that was a visit to a friend in four categories, one for each season: spring, summer, autumn and winter. The months _December to February are winter_, _March to May are spring_, _June to August summer_ and _September to November autumn_.
 **Remark:** Remember our data collection starts in April 2008, so the values for winter and spring of 2008 are a bit underestimated. The data collection ended in October 2010, so there the values for autumn and winter will be underestimated. The most reliable year for interpretation will therefore be 2009, so we focus our conclusions on those.
 
-Having divided the year into seasons, we examine for each check-in that was a friend's visit in which season it took place. Then we group by user, year and season and count how often people visited their friends there. Common sense tells us of course, that people stay inside in winter and go out most in summer. Does this hypothesis hold for **users outside of the US**? The results are summarised in the following boxplot.
+Having divided the year into seasons, we group by user, year and season and count how often people visited their friends there. Common sense tells us of course, that people stay inside in winter and go out most in summer. Does this hypothesis hold for **users outside of the US**? 
 
 {% include Friend_visit_non_US_season.html  %}
 
-In 2008, we said we can only reliably compare autumn and winter, since the data collection started
-
-Remark: 
-correct for missing months: 2008 starts in April
-2010 end ins October
+For the year 2009 we can see that most people visited each other in spring and summer (median value of friend visits is 417.5 and 418, respectively), and fewer people went out in autumn and winter (median value of friend visits is 105 and 79, respectively). This is consistent with our hypothesis that people move more when it gets warm again, maybe it is a bit unexpected that people on average visit as much friends in spring as in summer. One last time, let's inspect the situation for the **US users**.
 
 {% include Friend_visit_US_season.html  %}
 
-
+The same pattern can be found for the year 2009 for them: the median value for spring and summer is again higher than for autumn and winter.
 
 
 
