@@ -1,23 +1,23 @@
 **Why do friendships matter?**
 
-Our society tends to place an emphasis on romantic relationships and we think that just finding that right person will make us happy and fulfilled. But research shows that friends are actually even more important to our psychological welfare. Friendships have a huge impact on your mental health and happiness. Good friends relieve stress, provide comfort and joy, and prevent loneliness and isolation. Developing close friendships can also have a powerful impact on your physical health. Friends are even tied to longevity, since a Swedish study found that along with physical activity, maintaining a rich network of friends can add significant years to your life. A lack of social connection however may pose as much of a risk as smoking, drinking too much, or leading a sedentary lifestyle. But you can't make friendships out of thin air. Many of us struggle to meet people and develop quality connections. Whatever your age or circumstances, it’s never too late to make new friends and greatly improve your social life, emotional health, and overall well-being. 
+Our society tends to place an emphasis on romantic relationships and we think that just finding that right person will make us happy and fulfilled. But research shows that friends are actually even more important to our psychological well-being. Friendships have a huge impact on our mental health and happiness. Good friends relieve stress, provide comfort and joy, and prevent loneliness and isolation. Developing close friendships can also have a powerful impact on your physical health. Friends are even tied to longevity, since a Swedish study found that along with physical activity, maintaining a rich network of friends can add significant years to your life. A lack of social connections however may pose as much of a risk as smoking, drinking too much, or leading a sedentary lifestyle. But you can't make friendships out of thin air. Many of us struggle to meet people and develop quality connections. Whatever your age or circumstances, it’s never too late to make new friends and greatly improve your social life, emotional health, and overall well-being. 
 
 **What would your approach to making new friends be?** 
 
 There are countless psychological guides on how to make friends. And undoubtedly this is an essential aspect when approaching new people. But what if it's not just your social skills that determine whether you make friends? What if you could multiply your chances of making friends and vastly increase your friendship network by moving to a certain place? At a certain time of the year?
 
-Our research is concerned with exactly these external factors that influence our social network. We have looked at two **location-based social network** datasets. The users of those networks have checked in to various locations all over the world between April 2008 and October 2010. For each checkin, we know the geographical location, the exact time, the user and all the friends of the user. Based on these checkins, we could compute the home location of each user and whether or not a checkin was a visit to a friend or not. We will use this data as an unconventional approach to investigate friendship across time and space, providing insights about the external factors that determine someone's social cirlce, like the place of residence and the time of the year.
+Our research is concerned with exactly these external factors that influence our social network. We have looked at two **location-based social network** datasets. The users of those networks have checked in to various locations all over the world between April 2008 and October 2010. For each check-in, we know the geographical location, the exact time, the user and all the friends of the user. Based on these checkins, we could compute the home location of each user and whether or not a check-in was a visit to a friend or not. We will use this data as an unconventional approach to investigate friendship across time and space, providing insights about the external factors that determine someone's social cirlce, like the place of residence and the time of the year.
 
-Let's start inspecting the home locations of our users. To calculate it, we discretised the world in 25x25 km cells, took all the checkins of each user and calculated the home location as the average of all checkins in the most frequently visited cell. This gives us a 85% accuracy of the true user's home location:
+Let's start inspecting the home locations of our users. To calculate it, we discretised the world in 25x25 km cells, took all the check-ins of each user and calculated the home location as the average of all check-ins in the most frequently visited cell. This gives us a 85% accuracy of the true user's home location:
 
 {% include world_checkins.html %}
 
 We can see that the users are from all over the world, but a majority lives in either the US or Europe. To be precise, 81281 users live in the US and 76497 somewhere else. This is why in our later analysis, we will make a distinction between US and non-US users in order to not bias our results.
 
 
-<h2>The spacial dimension</h2>
+<h2>The spatial dimension</h2>
 
-There are plenty of spacial factors that can determine how many friends you have. Do you live in a rural or urban area? How well are the people in general connected at your place of residence?
+There are plenty of spatial factors that can determine how many friends you have. Do you live in a rural or urban area? How well are the people in general connected at your place of residence?
 
 **Are inhabitants of urban cities more likely to have friends than inhabitants of rural areas?**
 
@@ -25,7 +25,7 @@ We will start with investigating whether inhabitants of urban cities are more li
 
 {% include world_cities.html %}
 
-The next step is to compute whether a citizen lives in a city, which we will do by checking the distance to all cities of the home country of the user. Intuitively, the user lives in a city if the distance to at least on of them is smaller than the expansion of the respective city. Afterwards, we can compute the amount of friends per urban and rural user. For the **Non-US citizens** we get the following table of results:
+The next step is to compute whether a user lives in a city, which we will do by checking the distance to all cities of the home country of the user. Intuitively, the user lives in a city if the distance to at least one of them is smaller than the expansion of the respective city. Afterwards, we can compute the amount of friends per urban and rural user. For the **Non-US citizens** we get the following table of results:
 
 {% include urban_rural_friends_non_US.html %}
 
@@ -49,7 +49,7 @@ Living in the US or not, urban users have the same amount of friends than rural 
 
 **Investigating the structure of the social networks**
 
-We have discovered that the number of friends does not differ much between urban and rural inhabitants. An interesting follow up would be to look at how the friendship network is structured, can we detect communities that correspond to the geographical location of the users?
+We have discovered that the number of friends does not differ much between urban and rural inhabitants. An interesting follow up would be to look at how the friendship network is structured, is the network graph limited to a number of smaller subgraphs, corresponding to the geographical location of users? Or are the users of the network more strongly connected across space?
 
 To investigate this question we used a community detection algorithm on the friendship graph. There are a number of different community detection algorithms, however, due to the size of the datasets we had to restrict ourselves to algorithms that are pretty fast. We settled for the [Walktrap algorithm](http://arxiv.org/abs/physics/0512106). The algorithm tries to find densely connected subgraphs by performing random walks. The idea is that short random walks tend to stay in the same community.
 
