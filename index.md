@@ -160,11 +160,15 @@ Thanks for keeping the ball rolling all this time. As a reward, here are all our
 - The rest of the clusters are much smaller and usually concentrated in one city or state.
 - Users from the cities New York and Los Angeles seem to be particularly well-connected, as these cities are strongly represented in most clusters.
 
-3. TODO Devvis part
+3. **Does one's practices religion or spoken language influence the process of making friends?**
+- Religion generally does not seems to influence this process at all.
+- Language on the other side, do play an important role:
+  - Some languages, due to the fact that so many people speak them, are a smart investment when it comes to making friends.
+  - Especially if you are interested in making friends with individuals from certain countries, as intuition already suggests, the data indicates that learning particular languages can make a huge difference.
 
 4. **How often do users visit each other?**
-- people have loose friendships in the rural areas outside of the US or in big city inside the US.
-- people have deep friendships in the cities outside of the US or in the rural areas inside the US.
+- People have loose friendships in the rural areas outside of the US or in big city inside the US.
+- People have deep friendships in the cities outside of the US or in the rural areas inside the US.
 
 5. **When do users visit each other?**
 - In spring and summer, the same everywhere in the world.
