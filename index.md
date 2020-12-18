@@ -6,7 +6,7 @@ Our society tends to place an emphasis on romantic relationships and we think th
 
 There are countless psychological guides on how to make friends. And undoubtedly this is an essential aspect when approaching new people. But what if it's not just your social skills that determine whether you make friends? What if you could multiply your chances of making friends and vastly increase your friendship network by moving to a certain place? At a certain time of the year?
 
-Our research is concerned with exactly these external factors that influence our social network. We have looked at two **location-based social network** data sets. The users of those networks have checked in to various locations all over the world between April 2008 and October 2010. For each check-in, we know the geographical location, the exact time, the user and all the friends of the user. Based on these check-ins, we could compute the home location of each user and whether or not a check-in was a visit to a friend or not. We will use this data as an unconventional approach to investigate friendship across time and space, providing insights about the external factors that determine someone's social cirlce, like the place of residence and the time of the year.
+Our research is concerned with exactly these external factors that influence our social network. We have looked at two **location-based social network** datasets. The users of those networks have checked in to various locations all over the world between April 2008 and October 2010. For each check-in, we know the geographical location, the exact time, the user and all the friends of the user. Based on these check-ins, we could compute the home location of each user and whether or not a check-in was a visit to a friend or not. We will use this data as an unconventional approach to investigate friendship across time and space, providing insights about the external factors that determine someone's social cirlce, like the place of residence and the time of the year.
 
 Let's start inspecting the home locations of our users. To calculate it, we discretised the world in 25x25 km cells, took all the checkins of each user and calculated the home location as the average of all checkins in the most frequently visited cell. This gives us a 85% accuracy of the true user's home location:
 
@@ -51,11 +51,11 @@ Living in the US or not, urban users have the same amount of friends than rural 
 
 We have discovered that the number of friends does not differ much between urban and rural inhabitants. An interesting follow up would be to look at how the friendship network is structured, can we detect communities that correspond to the geographical location of the users?
 
-To investigate this question we used a community detection algorithm on the friendship graph. There are a number of different community detection algorithms, however, due to the size of the data sets we had to restrict ourselves to algorithms that run in near linear time. We settled for the walktrap algorithm (http://arxiv.org/abs/physics/0512106). The algorithm tries to find densely connected subgraphs by performing random walks. The idea is that short random walks tend to stay in the same community.
+To investigate this question we used a community detection algorithm on the friendship graph. There are a number of different community detection algorithms, however, due to the size of the datasets we had to restrict ourselves to algorithms that run in near linear time. We settled for the [Walktrap algorithm] (http://arxiv.org/abs/physics/0512106). The algorithm tries to find densely connected subgraphs by performing random walks. The idea is that short random walks tend to stay in the same community.
 
 We also decided to only use US check-ins. This is because we were mostly interested in seeing how cities are distributed in these clusters and introducing country borders would make things much more complicated. 
 
-What we discovered is that, for both data sets, the largest cluster had a pretty even distribution of cities. There was no city clearly dominating. Whats interesting about this is that it many users are quite tightly connected, despite great distances separating them. The largest cluster for the brightkite data set can be seen below.
+What we discovered is that, for both datasets, the largest cluster had a pretty even distribution of cities. There was no city clearly dominating. Whats interesting about this is that it many users are quite tightly connected, despite great distances separating them. The largest cluster for the Brightkite dataset can be seen below.
 
 {% include B1_us.html %}
 
@@ -64,11 +64,11 @@ Another observation we made is that some of the largest cities, such as New York
 
 {% include B3_us.html %}
 
-The third largest cluster in the brightkite data set, which is dominated by users living in Denver and Boulder, CO.
+The third largest cluster in the Brightkite dataset, which is dominated by users living in Denver and Boulder, CO.
 
 {% include B5_us.html %}
 
-The fifth largest cluster in the brightkite data set, which is dominated by users living in Phoenix, AZ.
+The fifth largest cluster in the Brightkite dataset, which is dominated by users living in Phoenix, AZ.
 
 --------------------------------------
 
