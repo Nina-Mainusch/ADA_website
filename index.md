@@ -81,12 +81,17 @@ In order to get a good grasp what kind of religions/languages we considered and 
 {% include world_languages.html %}
 
 As stated before, what we did next is assign one religion and language to each user, based on the most common language and religion in the user's respective home country. Since this method of assigning properties to users results in the fact that two users in the same country will also have the same language/religion, we will only considered international friendships. Using this approach, we are then able to build a network, where each node represents a language/religion and each edge between two nodes represents the number of friendships between two languages/religions.
+One important fact to mention here, is the interpretation of the size of respective nodes and edges:
+* The size of a node corresponds to the number of speakers of a language / practitioners of a religion.
+* When deciding on the thickness of the edges, we did not simply want to scale it according to the absolute number of friendships, since this value fluctuates strongly with the number of users per country. Instead, it corresponds to the proportion of realized friendships in respect to the maximum potential number of friendships. To give an example: Given that there are four users that speak language **A** and two users that speak language **B**, the maximum potential number of friendships is then four times two, i.e., eight; if we then only noted five friendships in the dataset, this would mean that the proportion of realized friendships is five divided by eight, i.e., 0,625.
 
-Here, we can see the corresponding network for religions.
+Here, we can see the corresponding friendship network for religions.
+
 {% include friendships_religions.html %}
 
+Contrary to what many might think, it is great to see that there are not clear subsets in this network that correspond to more general religious beliefs. What we mean by this, is that the religions like the *Catholicism*, *Protestantism* and *Christian Orthodoxy*, all of which belong to Christianity, do not form a closed subnetwork. Instead, we can even observe a strong connection between *Anglicanism* and *Islam*, both of which belonging to religious beliefs which are often thought to have more complicated relationship. Even though we would have loved to see clearer differentiation and subnetworks from a scientific perspective, this means that when we talk about making friends, our results give reason to believe that religion does not seem to matter!
 
-Next, let us consider the network in respect to spoken languages.
+Next, let us consider the friendship network in respect to spoken languages.
 {% include friendships_languages.html %}
 
 
