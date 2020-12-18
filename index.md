@@ -168,7 +168,7 @@ Thanks for keeping the ball rolling all this time. As a reward, here are all our
 
 Interpreting these results against the background of how to increase your friend network as efficiently as possible, we state: learn the language of the country you want to move to, wait for spring and summer, go to the well-connected big cities like New York and Los Angeles and get to know as much people as possible. In the meantime, never forget:
 
-> Look for the bare necessities
-> The simple bare necessities
-> Forget about your worries and your strife
-> - Phil Harris & Bruce Reitherman
+> Look for the bare necessities \
+> The simple bare necessities \
+> Forget about your worries and your strife \ 
+- Phil Harris & Bruce Reitherman
