@@ -56,15 +56,15 @@ What we discovered is that, for both datasets, the largest cluster, with roughly
 
 However, for the smaller clusters (100-2000 users) there was almost always one city or state clearly dominating. Below are two geographically of these constrained clusters, where more than 40 % of users are from the same city/state. So the structure of the friendship graph is clearly dependent on the geographical location of the users, which was also concluded in the original paper in Figure 2A. This raises a number of questions which would have been interesting to investigate, given more time. For instance, it might be interesting to investigate the difference between users that end up in geographically restricted clusters, compared to those that end up in the larger, more spread out, clusters. Another interesting thing to investigate would be if inhabitants of certain cities are more likely to end up in isolated clusters. What we observed was that for the two largest cities in the US, New York and Los Angeles (although in gowalla Austin had more users), there did not seem to be any clusters isolated in the cities. Instead, both cities were strongly represented in almost all the larger clusters, while never completely dominating. Maybe this is an indication that users living in these two cities are more connected with the rest of the country. Unfortunately, analysing the clusters was extremely computationally intensive, due to the size of the networks and having to find cities for all users, so we did not have the resources to conduct a rigorous investigation of these questions. But it might be interesting to look at more closely, given more time and resources.
 
+Below, the third largest cluster in the Brightkite dataset, which is dominated by users living in Denver and Boulder, CO.
+
 ![](https://nina-mainusch.github.io/ADA_website/images/B3_us.png)
 {% include B3_us.html %}
 
-The third largest cluster in the Brightkite dataset, which is dominated by users living in Denver and Boulder, CO.
+Below, the third largest cluster in the Gowalla dataset, which is dominated by users living in Austin, TX.
 
 ![](https://nina-mainusch.github.io/ADA_website/images/G3_us.png)
 {% include G3_us.html %}
-
-The third largest cluster in the Gowalla dataset, which is dominated by users living in Austin, TX.
 
 --------------------------------------
 
@@ -137,7 +137,7 @@ Thanks for keeping the ball rolling all this time. As a reward, here are all our
 No
 
 2. **How well are people in the US connected?**
-- Roughly 25% of all US users are form a large spread out cluster.
+- Roughly 25% of all US users form a large spread out cluster.
 - The rest of the clusters are much smaller and usually concentrated in one city or state.
 - Users from the cities New York and Los Angeles seem to be particularly well-connected, as these cities are strongly represented in most clusters.
 
