@@ -145,7 +145,7 @@ We completed our friendship journey through time and space!
 Thanks for keeping the ball rolling all this time. As a reward, here are all our results in a nutshell:
 
 1. **Are inhabitants of urban cities more likely to have friends than inhabitants of rural areas?**
-No
+- No
 
 2. **How well are people in the US connected?**
 - Roughly 25% of all US users form a large spread out cluster.
@@ -159,7 +159,7 @@ No
 - people have deep friendships in the cities outside of the US or in the rural areas inside the US.
 
 5. **When do users visit each other?**
-In spring and summer, the same everywhere in the world.
+- In spring and summer, the same everywhere in the world.
 
 Interpreting these results against the background of how to increase your friend network as efficiently as possible, we state: wait for spring and summer, go to the well connected big cities and get to know as much people as possible. In the meantime, never forget:
 
