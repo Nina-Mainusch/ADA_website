@@ -156,6 +156,6 @@ In spring and summer, the same everywhere in the world.
 
 Interpreting these results against the background of how to increase your friend network as efficiently as possible, we state: wait for spring and summer, go to the well connected big cities and get to know as much people as possible. In the meantime, never forget:
  
-> "When you live with an open heart, unexpected, joyful things happen." -Oprah Winfrey 
+> "When you live with an open heart, unexpected, joyful things happen." Oprah Winfrey 
 
 
